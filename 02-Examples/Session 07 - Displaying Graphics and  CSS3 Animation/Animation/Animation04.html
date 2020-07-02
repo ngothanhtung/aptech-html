@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 300px;
+        height: 300px;
+        background-image: url('Images/chrome.png');
+        background-size: 100%;
+        position: relative;
+        /* Chrome, Safari, Opera */
+        -webkit-animation-name: myfirst;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: normal;
+        -webkit-animation-play-state: running;
+        /* Standard syntax */
+        animation-name: myfirst;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-play-state: running;
+      }
+
+      /* Chrome, Safari, Opera */
+      @-webkit-keyframes myfirst {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      /* Standard syntax */
+      @keyframes myfirst {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ANIMATION WITH CSS3 #04</h1>
+    <div></div>
+  </body>
+</html>

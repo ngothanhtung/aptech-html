@@ -1,0 +1,13 @@
+﻿Xây dựng 1 form đăng ký thành viên gồm các tiêu chí sau:
+- Họ và tên
+- Giới tính
+- Email
+- Password (type="password")
+- Địa chỉ (Số nhà, tỉnh thành: HCM, Hà Nội, Đà Nẵng, Huế)
+- Quốc Gia (single selection)
+- Ngoại ngữ (multiple selection)
+- Sở thích (checkbox)
+- Giới thiệu bản thân (textarea)
+
+
+

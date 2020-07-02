@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">    
+    <title>JQUERY EXAMPLE</title>   
+    <script src="jquery.js"></script>
+    <style>
+        #div1 {
+            
+            background-color: red;
+        }
+        .divClass {
+            border: 5px solid green;
+            height: 100px;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="divClass" id="div1"></div>
+    <div class="divClass" id="div2"></div>
+    <div style="height: 100px; width: 200px; background-color: blue"></div>
+    <input id="button1" type="button" value="Click me (by ID)" />
+    <input id="button2" type="button" value="Click me (by Class)" />
+    <input id="button3" type="button" value="Click me (by Tag)" />
+</body>
+<script>
+    $("#button1").click(function() {
+        $("#div1").hide(1000).show(500);
+    });
+    
+    $("#button2").click(function() {
+        $(".divClass").hide(500).show(500);
+    });
+    
+    $("#button3").click(function() {
+        $("div").hide(500).show(500);
+    });
+</script>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FOR OUTPUT</title>
+</head>
+<body>
+<form oninput="x.value = parseInt(type.value)* parseInt(duration.value)">
+	<label>Membership Type:</label>
+	<select name="type">
+		<option value="400">Gold - $400</option> 
+		<option value="500">Silver - $500</option>
+		<option value="600">Platinum - $600</option>
+	</select>
+	<label>Duration [years]:</label>
+	<input type="number" value="0" name="duration" min="1"max="5" step="1" />
+	<label> Annual Payment Fees: $.</label>
+	<output name="x" for="type duration"></output>
+</form>
+</body>
+</html>

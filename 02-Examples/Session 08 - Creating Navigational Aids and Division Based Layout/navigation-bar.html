@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML - DIV TUTORIALS</title>
+    
+	<style>
+        body {
+            font-family: "Tahoma", "Arial";
+        }
+        nav {
+            position: fixed;
+            top: 0px;
+            
+        }
+
+		#navigation-bar {			
+            width: 1000px;
+			height: auto;
+            list-style: none;
+		}
+        
+        #navigation-bar li {            
+            cursor: pointer;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            opacity: 1.0;   
+            -webkit-transition: opacity 1s, background-color 1s; /* For Safari, Chrome */
+            -moz-transition: opacity 1s, background-color 1s; /* For Firefox */
+            transition: opacity 1s, background-color 1s, border 0.5s;
+		}
+        
+        #navigation-bar li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 10pt;
+            font-weight: bold;
+            transition: font-size 0.3s;
+        }
+               
+        #navigation-bar li:hover {            
+            opacity: 0.75;
+            border-bottom: 2px orange solid;
+            /*background-color: violet;*/
+        }
+
+        #navigation-bar li:hover a {            
+            font-size: 110%;
+        }
+        
+		#facebook {
+			background-color: #4E69A2;
+			float: left;
+			width: 200px;
+		}
+		#twitter {         
+            background-color: #55ACEE;
+			float: left;
+			width: 200px;
+		}
+		#googleplus {
+			background-color: #E05D4D;
+			float: left;
+			width: 200px;
+		}
+        #pinterest {
+			background-color: #C8232C;
+			float: left;
+			width: 200px;
+		}
+		#softech {
+			background-color: #C8FF2C;
+			float: left;
+			width: 200px;
+		}
+	</style>
+</head>
+<body>	
+<nav>
+	<ul id="navigation-bar">
+		<li id="facebook">
+            <a href="http://www.facebook.com">
+                FACEBOOK
+            </a>
+        </li>      
+		<li id="twitter">
+            <a href="http://www.twitter.com">
+                TWITTER
+            </a>
+        </li>
+        <li id="googleplus">
+            <a href="http://plus.google.com">
+                GOOGLE +
+            </a>
+        </li>
+        <li id="pinterest">
+            <a href="http://www.pinterest.com">
+                PINTEREST
+            </a>
+        </li>
+        <li id="softech">
+            <a href="http://www.softech.vn">
+                SOFTECH
+            </a>
+        </li>
+	</ul>
+</nav>
+<div style="height: 10000px;"></div>
+</body>
+</html>
