@@ -7,14 +7,7 @@
         height: 100px;
         background: red;
         position: relative;
-        /* Chrome, Safari, Opera */
-        -webkit-animation-name: myfirst;
-        -webkit-animation-duration: 5s;
-        -webkit-animation-timing-function: linear;
-        -webkit-animation-delay: 2s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-direction: alternate;
-        -webkit-animation-play-state: running;
+     
         /* Standard syntax */
         animation-name: myfirst;
         animation-duration: 5s;
@@ -25,34 +18,7 @@
         animation-play-state: running;
       }
 
-      /* Chrome, Safari, Opera */
-      @-webkit-keyframes myfirst {
-        0% {
-          background: red;
-          left: 0px;
-          top: 0px;
-        }
-        25% {
-          background: yellow;
-          left: 200px;
-          top: 0px;
-        }
-        50% {
-          background: blue;
-          left: 200px;
-          top: 200px;
-        }
-        75% {
-          background: green;
-          left: 0px;
-          top: 200px;
-        }
-        100% {
-          background: red;
-          left: 0px;
-          top: 0px;
-        }
-      }
+    
 
       /* Standard syntax */
       @keyframes myfirst {

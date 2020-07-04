@@ -12,6 +12,7 @@
 /build
 
 # misc
+Icon
 desktop.ini
 .DS_Store
 .env.local
