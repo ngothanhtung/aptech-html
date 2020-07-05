@@ -13,6 +13,7 @@
         align-items: center;
         padding: 24px;
       }
+
       .block {
         display: flex;
         margin-bottom: 24px;
@@ -20,6 +21,7 @@
         height: 60px;
         background-color: #ecf0f1;
       }
+
       .left-block {
         display: flex;
         justify-content: flex-end;
@@ -45,6 +47,7 @@
         display: flex;
         height: inherit;
       }
+
       .right-block span {
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
@@ -54,7 +57,6 @@
 
       .right-block-percent {
         display: flex;
-
         height: inherit;
         justify-content: flex-start;
         align-items: center;
@@ -63,7 +65,7 @@
   </head>
   <body>
     <div class="container">
-      <!-- BLOCK 1 -->
+      <!-- BEGIN: BLOCK BANDWIDTH -->
       <div class="block">
         <div class="left-block" style="background-color: #c62828;">
           <span>BANDWIDTH</span>
@@ -74,17 +76,33 @@
           </div>
         </div>
       </div>
-      <!-- BLOCK 2 -->
+      <!-- END: BLOCK BANDWIDTH -->
+
+      <!-- BEGIN: BLOCK STORAGE -->
       <div class="block">
         <div class="left-block" style="background-color: #0097a7;">
           <span>STORAGE</span>
         </div>
         <div class="right-block">
           <div class="right-block-percent" style="width: 50%; background-color: #00bcd4;">
-            <span>20%</span>
+            <span>50%</span>
           </div>
         </div>
       </div>
+      <!-- END: BLOCK STORAGE -->
+
+      <!-- BEGIN: USER STORAGE -->
+      <div class="block">
+        <div class="left-block" style="background-color: #43a047;">
+          <span>USERS</span>
+        </div>
+        <div class="right-block">
+          <div class="right-block-percent" style="width: 70%; background-color: #4caf50;">
+            <span>70%</span>
+          </div>
+        </div>
+      </div>
+      <!-- END: USER STORAGE -->
     </div>
   </body>
 </html>
