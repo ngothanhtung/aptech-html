@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <title></title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="txtNum1" />
+      <input type="text" id="txtNum2" />
+      <input type="text" id="txtNum3" />
+      <button id="btnSum">Sum</button>
+    </div>
+
+    <p id="result"></p>
+  </body>
+
+  <script>
+    $('#btnSum').click(function () {
+      var s1 = $('#txtNum1').val();
+      var s2 = $('#txtNum2').val();
+      var s3 = $('#txtNum3').val();
+
+      var n1 = parseInt(s1);
+      var n2 = parseInt(s2);
+      var n3 = parseInt(s3);
+
+      var sum = n1 + n2 + n3;
+
+      // IN RA THE P
+      $('#result').html('TONG CUA 03 SO LA: ' + sum);
+    });
+  </script>
+</html>

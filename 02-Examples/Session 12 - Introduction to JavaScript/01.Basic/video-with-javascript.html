@@ -1,43 +1,52 @@
-<!DOCTYPE html> 
-<html> 
-<body> 
+<!DOCTYPE html>
+<html>
+  <body>
+    <div style="text-align: center;">
+      <video id="video1" width="800" onclick="makeNormal()">
+        <source src="Video/Danang.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
 
-<div style="text-align:center"> 
-  <button onclick="playPause()">Play/Pause</button> 
-  <button onclick="makeBig()">Big</button>
-  <button onclick="makeSmall()">Small</button>
-  <button onclick="makeNormal()">Normal</button>
-  <br> 
-  <video id="video1" width="420">
-    <source src="mov_bbb.mp4" type="video/mp4">
-    <source src="mov_bbb.ogg" type="video/ogg">
-    Your browser does not support HTML5 video.
-  </video>
-</div> 
+      <br />
+      <br />
+      <button onclick="playPause()">Play/Pause</button>
+      <button onclick="makeFullscreen()">Fullscreen</button>
+      <button onclick="makeBig()">Big</button>
 
-<script> 
-var myVideo = document.getElementById("video1"); 
+      <button onclick="makeNormal()">Normal</button>
+      <button onclick="makeSmall()">Small</button>
+    </div>
 
-function playPause() { 
-    if (myVideo.paused) 
-        myVideo.play(); 
-    else 
-        myVideo.pause(); 
-} 
+    <script>
+      var myVideo = document.getElementById('video1');
 
-function makeBig() { 
-    myVideo.width = 560; 
-} 
+      function playPause() {
+        if (myVideo.paused) myVideo.play();
+        else myVideo.pause();
+      }
 
-function makeSmall() { 
-    myVideo.width = 320; 
-} 
+      function makeFullscreen() {
+        myVideo.style.minWidth = '100%';
+        myVideo.style.maxWidth = '100%';
+        myVideo.style.position = 'fixed';
+        myVideo.style.bottomt = '0';
+        myVideo.style.right = '0';
+      }
 
-function makeNormal() { 
-    myVideo.width = 420; 
-} 
-</script> 
+      function makeBig() {
+        myVideo.style = undefined;
+        myVideo.width = 560;
+      }
 
-<p>Video courtesy of <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
-</body> 
+      function makeSmall() {
+        myVideo.style = undefined;
+        myVideo.width = 320;
+      }
+
+      function makeNormal() {
+        myVideo.style = undefined;
+        myVideo.width = 420;
+      }
+    </script>
+  </body>
 </html>

@@ -1,72 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>ARRAY & LOOP</title>
-</head>
-<body>
+  <head>
+    <title>ARRAY & LOOP</title>
+  </head>
+  <body></body>
+  <script>
+    // Định nghĩa mảng
+    // Cách 1:
+    var fruits = new Array('apple', 'orange', 'mango', 'lemon', 'watermelon');
+    // Cách 2:
+    // var fruits = [ "apple", "orange", "mango" ];
 
-</body>
-<script>
-	// Định nghĩa mảng
-	// Cách 1:
-	var fruits = new Array( "apple", "orange", "mango", "lemon", "watermelon" );
-	// Cách 2:
-	// var fruits = [ "apple", "orange", "mango" ];
+    // Dùng for .. in
+    document.write('<h1>FOR .. IN: </h1>');
+    for (var i in fruits) {
+      document.write('Name: ' + fruits[i] + '<br />');
+      //console.log(fruits[i]);
+    }
 
-	// Dùng for .. in
-	document.write("<h1>FOR .. IN: </h1>");
-	for (var i in fruits) {
-		document.write("Name: " + fruits[i] + "<br />");
-		//console.log(fruits[i]);
-	}
+    document.write('<hr />');
+    document.write('<h1>FOR </h1>');
+    // Dùng for
+    for (var j = 0; j < fruits.length; j++) {
+      document.write('Name: ' + fruits[j] + '<br />');
+      //console.log(fruits[j]);
+    }
 
-	document.write("<hr />");
-	document.write("<h1>FOR </h1>");
-	// Dùng for
-	for (var j = 0; j < fruits.length; j++) {
-		document.write("Name: " + fruits[j] + "<br />");
-		//console.log(fruits[j]);
-	}
+    // Dùng while
+    document.write('<hr />');
+    document.write('<h1>EVEN NUMBERS: </h1>');
+    var count = 0;
+    while (count <= 10) {
+      if (count % 2 == 0) {
+        document.write('Number: ' + count + '<br />');
+      }
+      count++;
+    }
 
-	// Dùng while
-	document.write("<hr />");
-	document.write("<h1>EVEN NUMBERS: </h1>");
-	var count = 0;
-	while (count <= 10) {
-		if (count % 2 == 0) {
-			document.write("Number: " + count + "<br />");
-		}
-		count++;
-	}
-
-	// CASE SWITCH
-	document.write("<hr />");
-	document.write("<h1>CASE SWITCH: </h1>");
-	var month = 8;
-	switch (month) {
-		case 1:
-		case 2:
-		case 3:
-			document.write("MONTH " + month + " IS " + "SPRING");	
-			break;
-		case 4:
-		case 5:
-		case 6:
-			document.write("MONTH " + month + " IS " + "SUMMER");	
-			break;
-		case 7:
-		case 8:
-		case 9:
-			document.write("MONTH " + month + " IS " + "FALL");	
-			break;
-		case 10:
-		case 11:
-		case 12:
-			document.write("MONTH " + month + " IS " + "WINTER");	
-			break;
-		default:
-			document.write("UNKNOWN");	
-			break;
-	}
-</script>
+    // CASE SWITCH
+    document.write('<hr />');
+    document.write('<h1>CASE SWITCH: </h1>');
+    var month = 8;
+    switch (month) {
+      case 1:
+      case 2:
+      case 3:
+        document.write('MONTH ' + month + ' IS ' + 'SPRING');
+        break;
+      case 4:
+      case 5:
+      case 6:
+        document.write('MONTH ' + month + ' IS ' + 'SUMMER');
+        break;
+      case 7:
+      case 8:
+      case 9:
+        document.write('MONTH ' + month + ' IS ' + 'FALL');
+        break;
+      case 10:
+      case 11:
+      case 12:
+        document.write('MONTH ' + month + ' IS ' + 'WINTER');
+        break;
+      default:
+        document.write('UNKNOWN');
+        break;
+    }
+  </script>
 </html>

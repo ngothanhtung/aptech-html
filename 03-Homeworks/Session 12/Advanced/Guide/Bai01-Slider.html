@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <title></title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  </head>
+  <body>
+    <img id="slider" src="Images/b1.jpg" />
+    <br />
+
+    <button id="btnPrevious">Previous</button>
+    <button id="btnNext">Next</button>
+  </body>
+
+  <script>
+    var index = 1;
+    var count = 5;
+
+    $('#btnNext').click(function () {
+      if (index < count) {
+        index++;
+        $('#slider').hide();
+        $('#slider').attr('src', 'Images/b' + index + '.jpg');
+        $('#slider').fadeIn();
+      }
+    });
+
+    click(function () {
+      if (index > 1) {
+        index--;
+        $('#slider').hide();
+        $('#slider').attr('src', 'Images/b' + index + '.jpg');
+        $('#slider').fadeIn();
+      }
+    });
+  </script>
+</html>

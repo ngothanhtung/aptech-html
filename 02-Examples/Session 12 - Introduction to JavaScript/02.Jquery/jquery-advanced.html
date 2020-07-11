@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">    
-    <title>JQUERY EXAMPLE</title>   
+  <head>
+    <meta charset="utf-8" />
+    <title>JQUERY EXAMPLE</title>
     <script src="jquery.js"></script>
     <style>
-        #message {            
-            position: fixed;
-            bottom: 0px;
-            right: 0px;
-            background-color: yellow;
-            display: none;
-            height: 200px;
-            width: 300px;
-        }
-        .message-header {
-            background-color: blue;
-            float: left;
-            color: white;
-            height: 30px;
-            width: 270px;
-            text-align: center;
-            padding-top: 5px;
-            padding-bottom: 5px;
-        }
-        .message-close {
-            background-color: white;
-            color: black;
-            height: 30px;
-            width: 30px;
-            text-align: center;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            float: right;
-            cursor: pointer;
-        }
-        .message-content {
-            padding: 6px;
-            background-color: green;
-            height: 100%;
-            width: 100%;
-        }
+      #message {
+        display: flex;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        background-color: yellow;
+        display: none;
+        height: 200px;
+        width: 300px;
+      }
+      .message-header {
+        display: flex;
+        background-color: blue;
+        color: white;
+        height: 30px;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+      }
+      .message-close {
+        display: flex;
+        background-color: white;
+        color: black;
+        height: 30px;
+        width: 30px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      .message-content {
+        padding: 6px;
+        background-color: green;
+        height: 100%;
+        width: 100%;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="message">
+      <div style="display: flex;">
         <div class="message-header">THONG BAO</div>
         <div class="message-close">X</div>
-        <div class="message-content"></div>
-    </div>    
-    <input id="buttonOK" type="button" value="Submit" />
-</body>
-<script>
-    $("#buttonOK").click(function() {        
-        $("#message").show(500);
-        // Insert message into dialog (message-content)
-        var text = "Noi dung thong bao";
-        $(".message-content").html(text);
+      </div>
+
+      <div class="message-content"></div>
+    </div>
+    <input id="buttonSubmit" type="button" value="Submit" />
+  </body>
+  <script>
+    $('#buttonSubmit').click(function () {
+      $('#message').slideDown(200);
+      // Insert message into dialog (message-content)
+      var text = 'Noi dung thong bao';
+      $('.message-content').html(text);
     });
-    $(".message-close").click(function() {        
-        $("#message").hide(500);
-    }); 
-</script>
+    $('.message-close').click(function () {
+      $('#message').slideUp(200);
+    });
+  </script>
 </html>
