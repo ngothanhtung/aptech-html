@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img id="slider" src="Images/b1.jpg" height="400" />
+    <br />
+
+    <button id="btnPrevious" onclick="previous()">Previous</button>
+    <button id="btnNext" onclick="next()">Next</button>
+  </body>
+  <script>
+    var index = 1;
+    var count = 5;
+    var slider = document.getElementById('slider');
+
+    function previous() {
+      if (index === 1) return;
+      index = index - 1;
+      var url = 'Images/b' + index + '.jpg';
+      slider.src = url;
+    }
+
+    function next() {
+      if (index === 5) return;
+      index = index + 1;
+      var url = 'Images/b' + index + '.jpg';
+      slider.src = url;
+    }
+  </script>
+</html>
