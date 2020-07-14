@@ -14,7 +14,11 @@
       function myFunction() {
         var groups = document.getElementsByClassName('group');
         for (var i in groups) {
-          groups[i].style.backgroundColor = 'red';
+          if (i % 2 === 0) {
+            groups[i].style.backgroundColor = 'red';
+          } else {
+            groups[i].style.backgroundColor = 'green';
+          }
         }
       }
     </script>
