@@ -14,7 +14,7 @@
     <div class="container">
       <h1>AJAX</h1>
 
-      <button class="btn btn-primary" id="button-get-data">Get Data</button>
+      <button class="btn btn-primary" id="button-post-data">Post Data</button>
 
       <table id="myTable"></table>
     </div>
@@ -24,29 +24,20 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script>
-      // --------------------------------------------------------------------------------------------
-      function addRow(table, record) {
-        var row = table.insertRow(-1);
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-        var cell3 = row.insertCell(2);
-        cell1.innerHTML = record.id;
-        cell2.innerHTML = record.title;
-        cell3.innerHTML = record.userId;
-      }
-
       $(document).ready(function () {
-        $('#button-get-data').click(function () {
-          $.get('https://jsonplaceholder.typicode.com/albums', function (data, status) {
-            //console.log(data);
-            //array
-            var table = document.getElementById('myTable');
+        $('#button-post-data').click(function () {
+          var data = {
+            key: 'test2',
+            title: 'This is title 2',
+            props: {},
+            subMenuItems: {},
+            disabled: false,
+            sortOrder: 0,
+          };
 
-            data.forEach((record) => {
-              console.log(record);
-
-              addRow(table, record);
-            });
+          $.post('https://api.softech.cloud/menus/', data, function (result, status) {
+            console.log(status);
+            console.log(result);
           });
         });
       });
