@@ -42,10 +42,10 @@
       }
     }
     // --------------------------------------------------------------------------------------------
-    function buildBlock() {
+    function buildBlock(value) {
       var div = document.getElementById('myDiv');
       var text = document.createElement('span');
-      text.innerHTML = 'Hello';
+      text.innerHTML = value;
       text.style.color = 'red';
       text.onclick = function () {
         console.log(this);
@@ -56,7 +56,7 @@
     // --------------------------------------------------------------------------------------------
     function init() {
       buildTable();
-      buildBlock();
+      buildBlock('Hello Jquery');
     }
   </script>
 </html>
