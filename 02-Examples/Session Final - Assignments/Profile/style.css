@@ -1,0 +1,240 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #332c38;
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+}
+
+#home {
+  height: 100vh;
+}
+
+#home > nav {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  height: 4rem;
+}
+
+#home > nav > ul {
+  display: flex;
+  flex-direction: row;
+  width: 960px;
+  flex-direction: row;
+  align-items: center;
+}
+
+#home > nav > ul > li {
+  padding: 12px;
+  list-style: none;
+  flex-grow: 1;
+  text-align: center;
+}
+
+#home > nav > ul > li > a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+#name-card {
+  height: calc(100vh - 5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#name-card div.container {
+  display: flex;
+}
+
+#name-card div.left-column {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+
+  justify-content: center;
+  padding: 36px;
+}
+
+#name-card div.right-column {
+  flex: 1;
+  padding: 36px;
+}
+
+#name-card h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 12px;
+}
+
+#name-card h4 {
+  font-size: 1rem;
+  color: #f64c72;
+  letter-spacing: 3px;
+}
+
+#name-card button {
+  margin-top: 36px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #f64c72;
+  color: white;
+  font-weight: 700;
+  width: 160px;
+  padding: 12px;
+  text-transform: uppercase;
+}
+
+/* AVATAR */
+#name-card div.avatar-container {
+  border: 4px #f64c72 solid;
+  border-radius: 24px;
+  height: 300px;
+  width: 300px;
+}
+
+#name-card img.avatar {
+  border-radius: 16px;
+  height: 300px;
+  width: 300px;
+  margin-top: -24px;
+  margin-left: -24px;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh;
+  background-color: white;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+#project {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+#project h2 {
+  color: white;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+#skill {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  background-color: white;
+}
+
+#skill h2 {
+  color: #332c38;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+#timeline {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+#timeline h2 {
+  color: white;
+}
+
+#timeline div.right-block {
+  display: flex;
+  width: 600px;
+  min-height: 160px;
+  border-right: 2px dashed #f64c72;
+}
+
+#timeline div.left-block {
+  display: flex;
+  width: 600px;
+  min-height: 120px;
+  border-left: 2px dashed #f64c72;
+}
+
+#timeline div.content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+#timeline div.text {
+  flex: 1;
+  padding: 24px;
+  color: white;
+}
+
+#timeline div.text h4 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+#timeline div.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f64c72;
+  border-radius: 18px;
+  height: 36px;
+  width: 36px;
+  font-weight: 700;
+  color: white;
+}
+
+#timeline div.circle-right {
+  margin-right: -18px;
+}
+
+#timeline div.circle-left {
+  margin-left: -18px;
+}
+
+#timeline div.corner-bottom-right {
+  width: 300px;
+  margin-right: -300px;
+  height: 32px;
+  border-bottom-right-radius: 32px;
+  border-right: 2px dashed #f64c72;
+  border-bottom: 2px dashed #f64c72;
+}
+
+#timeline div.corner-top-left {
+  width: 300px;
+  margin-top: -2px;
+  margin-left: -300px;
+  height: 32px;
+  border-top-left-radius: 32px;
+  border-left: 2px dashed #f64c72;
+  border-top: 2px dashed #f64c72;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
