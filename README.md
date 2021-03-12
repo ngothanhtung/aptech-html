@@ -11,6 +11,7 @@
 - Prettier - Code formatter
 - Visual Studio IntelliCode
 - Bracket Pair Colorizer 2
+- Color Highlight
 - Dracula Official (theme)
  
 ## Session 02 - Practice & Homeworks 
