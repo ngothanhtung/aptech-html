@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0 auto;
+      }
+
+      .container {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+      }
+
+      @media screen and (max-width: 576px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+      .col-1 {
+        width: 100%;
+        background-color: yellow;
+        height: 200px;
+      }
+
+      .col-2 {
+        width: 100%;
+        background-color: red;
+        height: 200px;
+      }
+      .col-3 {
+        width: 100%;
+        background-color: blue;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col col-1"></div>
+      <div class="col col-2"></div>
+      <div class="col col-3"></div>
+    </div>
+  </body>
+</html>
