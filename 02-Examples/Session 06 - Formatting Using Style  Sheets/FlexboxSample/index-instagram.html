@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram FAKE</title>
+    <style>
+      .container {
+        width: 500px;
+        height: 100vh;
+        /* background-color: blue; */
+      }
+      .header-container {
+        display: flex;
+        background-color: yellow;
+        height: 80px;
+      }
+      .avatars-container {
+        display: flex;
+        background-color: orange;
+        justify-content: space-evenly;
+        height: 120px;
+      }
+
+      .author-container {
+        background-color: pink;
+        height: 80px;
+      }
+      .content {
+        background-color: white;
+        height: 400px;
+      }
+
+      .tab-navigation {
+        background-color: violet;
+        height: 80px;
+      }
+
+      #camera {
+        width: 80px;
+        /* flex: 1; */
+        height: 80px;
+        background-color: aqua;
+      }
+      #logo {
+        flex: 1;
+        height: 80px;
+        background-color: red;
+      }
+
+      #message {
+        width: 80px;
+        /* flex: 1; */
+        height: 80px;
+        background-color: aqua;
+      }
+      .avatar {
+        background-color: gray;
+        height: 80px;
+        width: 80px;
+        /* flex: 1; */
+      }
+      .avatar img {
+        border-radius: 100px;
+      }
+      /* .avatar > div {
+        border: solid 1px red;
+        padding: 2px;
+        border-radius: 100px;
+      } */
+    </style>
+  </head>
+  <body style="margin: 0px">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="header-container">
+        <div id="camera"></div>
+        <div id="logo"></div>
+        <div id="message"></div>
+      </div>
+
+      <!-- AVATARS -->
+      <div class="avatars-container">
+        <div class="avatar">
+          <div>
+            <img width="100%" src="https://uifaces.co/our-content/donated/xZ4wg2Xj.jpg" />
+          </div>
+        </div>
+        <div class="avatar">
+          <img width="100%" src="https://uifaces.co/our-content/donated/AVQ0V28X.jpg" />
+        </div>
+        <div class="avatar">
+          <img width="100%" src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=73a9df4b7bd1b330db1e903e08575ec1" />
+        </div>
+        <div class="avatar">
+          <img width="100%" src="https://randomuser.me/api/portraits/women/2.jpg" />
+        </div>
+        <div class="avatar">
+          <img width="100%" src="https://randomuser.me/api/portraits/women/49.jpg" />
+        </div>
+      </div>
+
+      <!-- AUTHOR -->
+      <div class="author-container"></div>
+
+      <!-- CONTENT -->
+      <div class="content"></div>
+
+      <!-- TAB -->
+      <div class="tab-navigation"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .block-container {
+        display: flex;
+        flex: 1;
+        background-color: gray;
+        height: 80px;
+      }
+      .block-left {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 200px;
+        background-color: #c62828;
+      }
+      .block-left > span {
+        margin-right: 20px;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      .block-right {
+        display: flex;
+        flex: 1;
+        justify-content: flex-start;
+        background-color: whitesmoke;
+      }
+      .block-right > div.percent {
+        display: flex;
+        height: 80px;
+        width: 20%;
+        background-color: pink;
+        align-items: center;
+      }
+
+      .block-right > div > span {
+        margin-left: 20px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block-container">
+      <div class="block-left">
+        <span>Bandwidth</span>
+      </div>
+      <div class="block-right">
+        <div class="percent"><span>20%</span></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
