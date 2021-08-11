@@ -13,6 +13,7 @@
 - Visual Studio IntelliCode
 - Bracket Pair Colorizer 2
 - Color Highlight
+- HTML CSS Support
 - Dracula Official (theme)
 
 ## Task 4: Vẽ phác thảo - Wireframe
