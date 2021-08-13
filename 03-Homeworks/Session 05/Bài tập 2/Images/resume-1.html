@@ -6,34 +6,73 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Alan Walker</title>
+	<style>
+		.row-header {
+			height: 80px;
+			background-color: white;
+		}
+
+		.row-header>.column-left>p {
+			padding-top: 40px;
+			padding-left: 12px;
+		}
+
+		.row-author {
+			clear: both;
+			background-color: rgb(133, 24, 133);
+			padding-top: 20px;
+		}
+
+		.row-author div {
+			margin-left: 120px;
+			padding: 20px;
+		}
+
+		.row-author h1 {
+			color: white;
+		}
+
+		.row-author p {
+			color: gray;
+			margin-top: -12px;
+			font-size: 16pt;
+		}
+
+		.column-left {
+			float: left;
+			width: 30%;
+			background-color: black;
+		}
+
+		.column-right {
+			float: left;
+			width: 70%;
+			background-color: yellow;
+		}
+	</style>
 </head>
 
 <body>
-	<div style="width: 900px; margin: 0 auto">
-		<div>
-			<div style="float: left; background-color: black; width: 30%;">
-				<div style=" padding-top: 40px; padding-left: 12px;">
-					<p style="color: white">
-						RESUME
-					</p>
-				</div>
+	<div style="width: 1000px; margin: 0 auto">
+		<div class="row-header">
+			<div class="column-left">
+				<p style="color: white">
+					RESUME
+				</p>
 			</div>
-			<div></div>
 		</div>
-		<div style="clear: left; padding-top: 20px; background-color: rgb(133, 24, 133)">
-			<div style="padding-left: 120px; padding-bottom: 30px">
-				<h1 style="color: #ffffff">
+		<div class="row-author">
+			<div>
+				<h1>
 					ALAN WALKER
 				</h1>
-				<div style="margin-top: -20px;">
-					<i style="font-size: 15pt; color: #BDC1C3">
-						Graphic Designer
-					</i>
-				</div>
+				<p>
+					Graphic Designer
+				</p>
 			</div>
 		</div>
 		<div>
-			<div style="float: left; width: 30%; height: 1100px; background-color: black">
+			<div class="column-left">
 				<div style="padding: 20px">
 					<img src="photo.png" style="width: 100%">
 				</div>
@@ -72,7 +111,7 @@
 					</ul>
 				</div>
 			</div>
-			<div style="float: left; width: 70%; height: 1100px; background-color: yellow">
+			<div class="column-right">
 				<div style="padding-left: 20px; padding-right: 20px">
 					<!-- JOB EXPERIENCES -->
 					<div style="clear: both">
