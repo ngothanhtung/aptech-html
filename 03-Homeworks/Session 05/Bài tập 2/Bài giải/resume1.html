@@ -5,142 +5,149 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alan Walker - Resume</title>
+  <title>Alab Walker</title>
   <style>
-    body {
-      margin: 0;
-    }
-
     .container {
-      /* canh giữa */
-      margin: 0 auto;
       width: 1000px;
       height: 100vh;
-      background-color: aqua;
+      margin: 0 auto;
+      background-color: aquamarine;
     }
 
     .row-header {
       display: flex;
       height: 120px;
-    }
+      background-color: blue;
 
-    .resume {
-      padding-left: 24px;
-      color: white;
     }
 
     .row-title {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       height: 120px;
-      background-color: blue;
-    }
+      background-color: violet;
 
-    .row-title>h2 {
-      letter-spacing: 10px;
-      font-size: 32px;
-      padding-left: 60px;
-      margin-bottom: 0;
-    }
-
-    .row-title>p {
-      margin-top: 4px;
-      padding-left: 60px;
-      font-size: 22px;
     }
 
     .row-content {
       display: flex;
-      background-color: yellow;
-      min-height: 600px;
     }
 
     .column-left {
+      flex: 1;
       display: flex;
-      align-items: flex-end;
-      width: 33%;
+      min-height: 120px;
       background-color: black;
+      align-items: flex-end;
+      color: white;
     }
 
     .column-right {
-      flex: 1;
+      display: flex;
+      flex: 3;
+      height: 120px;
       background-color: white;
+    }
+
+    .column-left>h1 {
+      margin-left: 12px;
+      font-size: 24px;
+    }
+
+    .row-title>h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 60px;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 54px;
+    }
+
+    .row-title>span {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 60px;
+      text-transform: uppercase;
+      letter-spacing: 8px;
     }
 
     .column-left-container {
       padding: 24px;
-      color: white;
-    }
-
-    .hobbies>li {
-      margin-left: -24px;
     }
 
     .column-right-container {
+      display: flex;
+      flex-direction: column;
       padding: 24px;
+    }
+
+    .job {
+      display: flex;
+      flex: 1;
+    }
+
+    .job-time {
+      flex: 1;
+      font-weight: 700;
+      white-space: nowrap;
+      margin-right: 24px;
+    }
+
+    .job-description {
+      flex: 3
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <!-- ROW HEADER -->
     <div class="row-header">
       <div class="column-left">
-        <p class="resume">RESUME</p>
+        <h1>RESUME</h1>
       </div>
       <div class="column-right"></div>
     </div>
-
-    <!-- ROW TITLE -->
     <div class="row-title">
-      <h2>ALAN WALKER</h2>
-      <p>Graphic Designer</p>
+      <h2>Alan Walker</h2>
+      <span>Graphic Designer</span>
     </div>
-
     <div class="row-content">
-      <!-- ---------------------------------------------------- -->
-      <!-- COLUMN LEFT -->
       <div class="column-left">
         <div class="column-left-container">
           <img src="../Images/photo.png" width="100%" />
-
-          <!-- PROFILE -->
-          <p>PROFILE</p>
-          <p> <strong>Name</strong> </p> <em> Alan Walker </em>
-
+          <h3>PROFILE</h3>
+          <!-- NAME -->
+          <div>
+            <h3>
+              <strong>Name</strong>
+            </h3>
+            <em>Alan Walker</em>
+          </div>
           <!-- DATE OF BIRTH -->
-          <p> <strong>Date of Birth</strong> </p>
-          <em> Alan Walker </em>
-
-          <!-- DATE OF BIRTH -->
-          <p> <strong>Phone</strong> </p>
-          <em> +84.905157803 </em>
-
-          <!-- HOBBIES -->
-          <p> HOBBIES </p>
-          <ul class='hobbies' style="list-style-type: none;">
-            <li>* Dance</li>
-            <li>* Read books</li>
-            <li>* Swimming</li>
-          </ul>
+          <div>
+            <h3>
+              <strong>Date of Birth</strong>
+            </h3>
+            <em>10/10/1994</em>
+          </div>
         </div>
       </div>
-
-      <!-- ---------------------------------------------------- -->
-      <!-- COLUMN RIGHT -->
       <div class="column-right">
         <div class="column-right-container">
           <h2>JOB EXPERIENCES</h2>
-        </div>
-
-        <div class="row-job">
-          <div class="column-job-time"></div>
-          <div class="column-job-description"></div>
+          <div class="job">
+            <div class="job-time">
+              2015-2016
+            </div>
+            <div class="job-description">
+              Làm ở công ty cổ phần Softech
+            </div>
+          </div>
+          <div></div>
         </div>
       </div>
     </div>
-
   </div>
 </body>
 
