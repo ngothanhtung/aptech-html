@@ -1,77 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      div {
-        width: 100px;
-        height: 100px;
+
+<head>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: relative;
+      animation: myfirst 2s;
+    }
+
+
+
+    /* Standard syntax */
+    @keyframes myfirst {
+      0% {
         background: red;
-        position: relative;
-        -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
-        animation: myfirst 5s;
+        left: 0px;
+        top: 0px;
       }
 
-      /* Chrome, Safari, Opera */
-      @-webkit-keyframes myfirst {
-        0% {
-          background: red;
-          left: 0px;
-          top: 0px;
-        }
-        25% {
-          background: yellow;
-          left: 200px;
-          top: 0px;
-        }
-        50% {
-          background: blue;
-          left: 200px;
-          top: 200px;
-        }
-        75% {
-          background: green;
-          left: 0px;
-          top: 200px;
-        }
-        100% {
-          background: red;
-          left: 0px;
-          top: 0px;
-        }
+      25% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
       }
 
-      /* Standard syntax */
-      @keyframes myfirst {
-        0% {
-          background: red;
-          left: 0px;
-          top: 0px;
-        }
-        25% {
-          background: yellow;
-          left: 200px;
-          top: 0px;
-        }
-        50% {
-          background: blue;
-          left: 200px;
-          top: 200px;
-        }
-        75% {
-          background: green;
-          left: 0px;
-          top: 200px;
-        }
-        100% {
-          background: red;
-          left: 0px;
-          top: 0px;
-        }
+      50% {
+        background: blue;
+        left: 200px;
+        top: 200px;
       }
-    </style>
-  </head>
-  <body>
-    <h1>ANIMATION WITH CSS3 #02</h1>
-    <div></div>
-  </body>
+
+      75% {
+        background: green;
+        left: 0px;
+        top: 200px;
+      }
+
+      100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>ANIMATION WITH CSS3 #02</h1>
+  <div></div>
+</body>
+
 </html>
