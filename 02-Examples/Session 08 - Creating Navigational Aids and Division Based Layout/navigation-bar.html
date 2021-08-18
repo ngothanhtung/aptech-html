@@ -1,112 +1,119 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>HTML - DIV TUTORIALS</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <style>
-      body {
-        font-family: 'Roboto', sans-serif;
-        margin: 0px auto;
-        /* background-color: #55acee; */
-      }
 
-      #container {
-        width: 1140px;
-        /* background-color: yellow; */
-      }
+<head>
+  <meta charset="utf-8" />
+  <title>HTML - DIV TUTORIALS</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0px auto;
+      /* background-color: #55acee; */
+    }
 
-      nav {
-        position: fixed;
-        top: 0px;
-      }
+    #container {
+      width: 1140px;
+      /* background-color: yellow; */
+    }
 
-      #navigation-bar {
-        width: 100%;
-        height: auto;
-        list-style: none;
-      }
+    nav {
+      position: fixed;
+      top: 0px;
+    }
 
-      #navigation-bar li {
-        cursor: pointer;
-        text-align: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        opacity: 1;
-        transition: opacity 1s, background-color 1s, border 0.5s;
-      }
+    #navigation-bar {
+      width: 100%;
+      height: auto;
+      list-style: none;
+    }
 
-      #navigation-bar li a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 10pt;
-        font-weight: bold;
-        transition: font-size 0.3s;
-      }
+    #navigation-bar>li {
+      cursor: pointer;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      opacity: 1;
+      transition: opacity 1s, background-color 1s, border 0.5s;
+    }
 
-      #navigation-bar li:hover {
-        opacity: 0.75;
-        border-bottom: 8px orange solid;
-        /*background-color: violet;*/
-      }
+    #navigation-bar>li>a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 10pt;
+      font-weight: bold;
+      transition: font-size 0.3s;
+    }
 
-      #navigation-bar li:hover a {
-        font-size: 110%;
-      }
+    #navigation-bar li:hover {
+      opacity: 0.75;
+      border-bottom: 8px orange solid;
+      /*background-color: violet;*/
+    }
 
-      #facebook {
-        background-color: #4e69a2;
-        float: left;
-        width: 200px;
-      }
-      #twitter {
-        background-color: #55acee;
-        float: left;
-        width: 200px;
-      }
-      #googleplus {
-        background-color: #e05d4d;
-        float: left;
-        width: 200px;
-      }
-      #pinterest {
-        background-color: #c8232c;
-        float: left;
-        width: 200px;
-      }
-      #softech {
-        background-color: #c8ff2c;
-        float: left;
-        width: 200px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="container">
-      <nav>
-        <ul id="navigation-bar">
-          <li id="facebook">
-            <a href="http://www.facebook.com"> FACEBOOK </a>
-          </li>
-          <li id="twitter">
-            <a href="http://www.twitter.com"> TWITTER </a>
-          </li>
-          <li id="googleplus">
-            <a href="http://plus.google.com"> GOOGLE + </a>
-          </li>
-          <li id="pinterest">
-            <a href="http://www.pinterest.com"> PINTEREST </a>
-          </li>
-          <li id="softech">
-            <a href="http://www.softech.vn"> SOFTECH </a>
-          </li>
-        </ul>
-      </nav>
-      <div style="height: 10000px"></div>
-      <footer>
-        <address>Aptech - 38 Yen Bai</address>
-      </footer>
-    </div>
-  </body>
+    #navigation-bar li:hover a {
+      font-size: 110%;
+    }
+
+    #facebook {
+      background-color: #4e69a2;
+      float: left;
+      width: 200px;
+    }
+
+    #twitter {
+      background-color: #55acee;
+      float: left;
+      width: 200px;
+    }
+
+    #googleplus {
+      background-color: #e05d4d;
+      float: left;
+      width: 200px;
+    }
+
+    #pinterest {
+      background-color: #c8232c;
+      float: left;
+      width: 200px;
+    }
+
+    #softech {
+      background-color: #c8ff2c;
+      float: left;
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <nav>
+      <ul id="navigation-bar">
+        <li id="facebook">
+          <a href="http://www.facebook.com"> FACEBOOK </a>
+        </li>
+        <li id="twitter">
+          <a href="http://www.twitter.com"> TWITTER </a>
+        </li>
+        <li id="googleplus">
+          <a href="http://plus.google.com"> GOOGLE + </a>
+        </li>
+        <li id="pinterest">
+          <a href="http://www.pinterest.com"> PINTEREST </a>
+        </li>
+        <li id="softech">
+          <a href="http://www.softech.vn"> SOFTECH </a>
+        </li>
+      </ul>
+    </nav>
+    <div style="height: 10000px"></div>
+    <footer>
+      <address>Aptech - 38 Yen Bai</address>
+    </footer>
+  </div>
+</body>
+
 </html>
