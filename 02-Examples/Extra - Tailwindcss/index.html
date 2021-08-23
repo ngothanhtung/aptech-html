@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <title>Tailwindcss</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <title>Tailwindcss</title>
-</head>
-
-<body>
-  <div class="flex h-screen bg-gray-500">
-    <div class="h-10 w-10 bg-red-500 mb-2 ml-8"></div>
-    <div class="h-10 w-10 bg-green-900 lg:bg-green-500"></div>
-
-  </div>
-
-
-</body>
-
+  <body>
+    <div class="flex bg-gray-100">
+      <div class="h-10 w-10 bg-red-500 mb-2 ml-8"></div>
+      <div class="h-10 w-10 bg-green-900 lg:bg-green-500"></div>
+      <img src="./avatar.jpg" class="lg:w-48 w-32 h-auto rounded-full shadow-md" alt="" />
+    </div>
+  </body>
 </html>
