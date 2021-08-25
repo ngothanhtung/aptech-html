@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <div style="text-align: center;">
-      <video id="video1" width="800" onclick="makeNormal()">
-        <source src="Video/Danang.mp4" type="video/mp4" />
-        Your browser does not support HTML5 video.
-      </video>
 
-      <br />
-      <br />
-      <button onclick="playPause()">Play/Pause</button>
-      <button onclick="makeFullscreen()">Fullscreen</button>
-      <button onclick="makeBig()">Big</button>
-      <button onclick="makeNormal()">Normal</button>
-      <button onclick="makeSmall()">Small</button>
-    </div>
+<body>
+  <div style="text-align: center;">
+    <video id="video1" width="800" onclick="makeNormal()">
+      <source src="Video/Danang.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
 
-    <script>
-      var myVideo = document.getElementById('video1');
+    <br />
+    <br />
+    <button onclick="playPause()">Play/Pause</button>
+    <button onclick="makeFullscreen()">Fullscreen</button>
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeNormal()">Normal</button>
+    <button onclick="makeSmall()">Small</button>
+  </div>
 
-      function playPause() {
-        if (myVideo.paused) myVideo.play();
-        else myVideo.pause();
-      }
+  <script>
+    var myVideo = document.getElementById('video1');
 
-      function makeFullscreen() {
-        myVideo.style.minWidth = '100%';
-        myVideo.style.maxWidth = '100%';
-        myVideo.style.position = 'fixed';
-        myVideo.style.bottomt = '0';
-        myVideo.style.right = '0';
-      }
+    function playPause() {
+      if (myVideo.paused) myVideo.play();
+      else myVideo.pause();
+    }
 
-      function makeBig() {
-        myVideo.style = undefined;
-        myVideo.width = 560;
-      }
+    function makeFullscreen() {
+      myVideo.style.minWidth = '100%';
+      myVideo.style.maxWidth = '100%';
+      myVideo.style.position = 'fixed';
+      myVideo.style.bottomt = '0';
+      myVideo.style.right = '0';
+    }
 
-      function makeSmall() {
-        myVideo.style = undefined;
-        myVideo.width = 320;
-      }
+    function makeBig() {
+      myVideo.style = undefined;
+      myVideo.width = 768;
+    }
 
-      function makeNormal() {
-        myVideo.style = undefined;
-        myVideo.width = 420;
-      }
-    </script>
-  </body>
+    function makeSmall() {
+      myVideo.style = undefined;
+      myVideo.width = 320;
+    }
+
+    function makeNormal() {
+      myVideo.style = undefined;
+      myVideo.width = 420;
+    }
+  </script>
+</body>
+
 </html>
