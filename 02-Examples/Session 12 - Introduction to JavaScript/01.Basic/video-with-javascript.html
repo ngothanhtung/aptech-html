@@ -18,7 +18,7 @@
   </div>
 
   <script>
-    var myVideo = document.getElementById('video1');
+    var myVideo = document.querySelector('#video1');
 
     function playPause() {
       if (myVideo.paused) myVideo.play();
@@ -26,10 +26,10 @@
     }
 
     function makeFullscreen() {
-      myVideo.style.minWidth = '100%';
+      myVideo.style.minWidth = '100%'; // minWidth: '100%'
       myVideo.style.maxWidth = '100%';
       myVideo.style.position = 'fixed';
-      myVideo.style.bottomt = '0';
+      myVideo.style.bottom = '0';
       myVideo.style.right = '0';
     }
 
