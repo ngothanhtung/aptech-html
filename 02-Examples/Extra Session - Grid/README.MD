@@ -58,7 +58,7 @@ An HTML element becomes a grid container when its **display** property is set to
 
 The vertical lines of grid items are called columns.
 
-<div style="background-color: white; padding: 24px; margin-bottom: 24px">
+<div style="background-color: whitesmoke; padding: 24px; margin-bottom: 24px">
 
 ![alt text](https://www.w3schools.com/css/grid_columns.png)
 
@@ -68,7 +68,7 @@ The vertical lines of grid items are called columns.
 
 The horizontal lines of grid items are called rows.
 
-<div style="background-color: white; padding: 24px; margin-bottom: 24px">
+<div style="background-color: whitesmoke; padding: 24px; margin-bottom: 24px">
 
 ![alt text](https://www.w3schools.com/css/grid_rows.png)
 
@@ -78,7 +78,7 @@ The horizontal lines of grid items are called rows.
 
 The spaces between each column/row are called gaps.
 
-<div style="background-color: white; padding: 24px; margin-bottom: 24px">
+<div style="background-color: whitesmoke; padding: 24px; margin-bottom: 24px">
 
 ![alt text](https://www.w3schools.com/css/grid_gaps.png)
 
@@ -104,7 +104,7 @@ You can adjust the gap size by using one of the following properties:
 - The lines between columns are called column lines.
 - The lines between rows are called row lines.
 
-<div style="background-color: white; padding: 24px; margin-bottom: 24px">
+<div style="background-color: whitesmoke; padding: 24px; margin-bottom: 24px">
 
 ![](https://www.w3schools.com/css/grid_lines.png)
 
