@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(12, auto);
+      grid-gap: 0px;
+    }
+
+    .column-left {
+      grid-column: span 8;
+      background-color: violet;
+      min-height: 100vh;
+    }
+
+    .column-right {
+      grid-column: span 4;
+      background-color: pink;
+      min-height: 100vh;
+    }
+
+
+    @media only screen and (max-width: 768px) {
+      .column-left {
+        grid-column: span 6;
+      }
+
+      .column-right {
+        grid-column: span 6;
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      .column-left {
+        grid-column: span 12;
+      }
+
+      .column-right {
+        grid-column: span 12;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="column-left">TEXT</div>
+    <div class="column-right">TEXT</div>
+  </div>
+</body>
+
+</html>

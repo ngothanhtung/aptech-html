@@ -37,12 +37,12 @@
   grid-column: span 4;
 }
 
-.square-green {
+/* .square-green {
   grid-area: GreenArea;
   background-color: green;
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
-}
+} */
 
 @media only screen and (max-width: 1200px) {
   .container {
