@@ -1,0 +1,97 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+  /* grid-template-rows: 100px 300px; */
+  /* grid-template-areas: "GreenArea GreenArea . . ."; */
+  grid-gap: 12px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.square {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-red {
+  background-color: rgb(247, 95, 95);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 8;
+}
+
+.square-yellow {
+  background-color: yellow;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 4;
+}
+
+.square-green {
+  grid-area: GreenArea;
+  background-color: green;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    background-color: violet;
+  }
+  .square-red {
+    grid-column: span 8;
+  }
+  .square-yellow {
+    grid-column: span 4;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    background-color: orange;
+  }
+
+  .square-red {
+    grid-column: span 7;
+  }
+  .square-yellow {
+    grid-column: span 5;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: auto auto;
+    background-color: green;
+  }
+
+  .square-red {
+    grid-column: span 1;
+  }
+
+  .square-yellow {
+    grid-column: span 1;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background-color: black;
+  }
+
+  .square-red {
+    grid-row-start: 2;
+  }
+}
