@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <style>
+    .group {
+      height: 100px;
+      border: 3px solid black;
+      margin: 12px;
+    }
+  </style>
+  <script>
+    function myFunction() {
+      var groups = document.getElementsByClassName('group');
+      for (var i = 0; i < groups.length; i++) {
+        if (i === 2) {
+          continue;
+        }
+
+        groups[i].style.backgroundColor = 'red';
+
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="group"></div>
+  <div class="group"></div>
+  <div class="group"></div>
+  <div class="group"></div>
+  <div class="group"></div>
+  <div class="group"></div>
+  <button onclick="myFunction()">Click me</button>
+</body>
+
+</html>
