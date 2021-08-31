@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 1</title>
+</head>
+
+<body>
+  <h3>Sum: <span id='sum'></span></h3>
+  <script>
+    // Question: Enter 3 numbers and print sum of them.
+    let a = prompt('Enter 1st number: ', 0);
+    let b = prompt('Enter 2nd number: ', 0);
+    let c = prompt('Enter 3rd number: ', 0);
+
+    let sum = parseInt(a) + parseInt(b) + parseInt(c);
+
+    document.querySelector("#sum").innerHTML = sum;
+
+  </script>
+</body>
+
+</html>
