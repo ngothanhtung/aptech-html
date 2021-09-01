@@ -13,6 +13,8 @@
   // Cách 2:
   var fruits = ['apple', 'orange', 'mango', 'lemon', 'watermelon'];
 
+
+
   // Dùng for .. in
   document.write('<h1>FOR .. IN: </h1>');
   for (var i in fruits) {
@@ -39,35 +41,13 @@
     count++;
   }
 
-  // CASE SWITCH
-  document.write('<hr />');
-  document.write('<h1>CASE SWITCH: </h1>');
-  var month = 8;
-  switch (month) {
-    case 1:
-    case 2:
-    case 3:
-      document.write('MONTH ' + month + ' IS ' + 'SPRING');
-      break;
-    case 4:
-    case 5:
-    case 6:
-      document.write('MONTH ' + month + ' IS ' + 'SUMMER');
-      break;
-    case 7:
-    case 8:
-    case 9:
-      document.write('MONTH ' + month + ' IS ' + 'FALL');
-      break;
-    case 10:
-    case 11:
-    case 12:
-      document.write('MONTH ' + month + ' IS ' + 'WINTER');
-      break;
-    default:
-      document.write('UNKNOWN');
-      break;
-  }
+
+  // Mảng 2 chiều
+
+  var array2D = new Array(2);
+  array2D[0] = new Array('Monitor', 165);
+  array2D[1] = new Array('Ram', 65);
+  console.log(array2D);
 </script>
 
 </html>
