@@ -10,23 +10,29 @@
 
 <body>
   <script>
-    const fruits = ["apple", "orange"];
+    // Cách phổ biến
+    const fruits = ["apple", "orange", "lemon"];
+
+    // Cách 2:
+    const x = new Array("apple", "orange", "lemon");
 
     // Not recommended: code is too long
-    for (let index = 0; index < fruits.length; index++) {
-      const element = fruits[index];
-      console.log(element)
-    }
+    // for (let index = 0; index < fruits.length; index++) {
+    //   const element = fruits[index];
+    //   console.log(element)
+    // }
 
     // forEach: easy mode
     fruits.forEach(element => {
+      document.write("<h3>" + element + "</h3>");
       console.log(element)
     });
 
     // Not recommended: code is hard to understand
-    for (var i in fruits) {
-      console.log(fruits[i]);
-    }
+    // for (var index in fruits) {
+    //   const element = fruits[index];
+    //   console.log(element);
+    // }
   </script>
 </body>
 
