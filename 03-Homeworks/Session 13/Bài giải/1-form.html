@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+
+    label {
+      font-weight: 500;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+
+    input[type="text"] {
+      height: 40px;
+      border-radius: 4px;
+      border: 1px solid #00000040;
+      color: black;
+      padding: 0px 12px 0px 12px;
+      transition: all 0.3s;
+    }
+
+    input:focus {
+      border: 1px solid #3395FF;
+
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+    }
+
+    button {
+      min-width: 120px;
+      height: 40px;
+      border-radius: 4px;
+      border: 2px solid #3395FF;
+      cursor: pointer;
+      background-color: #007AFF;
+      color: white;
+      padding: 0px 12px 0px 12px;
+      font-weight: 500;
+      transition: all 0.5s;
+    }
+
+    button:hover {
+      background-color: #006EE6;
+    }
+  </style>
+</head>
+
+<body>
+  <form onsubmit="calculate(); return false;" name="myForm">
+    <div class="form-group">
+      <label for="n1">Số thứ nhất</label>
+      <input autocomplete="off" type="text" id="n1" name="n1" />
+    </div>
+
+    <div class="form-group">
+      <label for="n2">Số thứ hai</label>
+      <input autocomplete="off" type="text" id="n2" name="n2" />
+    </div>
+
+    <div class="form-group">
+      <label for="n3">Số thứ ba</label>
+      <input autocomplete="off" type="text" id="n3" name="n3" />
+    </div>
+    <button type="submit">Calculate</button>
+  </form>
+
+  <h3>Sum: <span id='sum'></span></h3>
+  <script>
+
+    function calculate() {
+      const form = document.querySelector('form[name="myForm"]');
+      let n1 = form.elements[0].value;
+      let n2 = form.elements[1].value;
+      let n3 = form.elements[2].value;
+      let sum = parseInt(n1) + parseInt(n2) + parseInt(n3);
+      if (isNaN(sum)) {
+        alert('Please input valid numbers');
+      }
+      else {
+        document.querySelector('#sum').innerHTML = sum;
+      }
+    }
+  </script>
+</body>
+
+</html>
