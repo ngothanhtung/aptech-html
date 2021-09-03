@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // const numbers = [1, 16, 8, 11, 9];
+    const numbers = [];
+
+    // Nhập từ màn hình / bàn phím
+    for (let i = 1; i <= 5; i++) {
+      let x = prompt("Nhap so: ", 0);
+      numbers.push(parseInt(x));
+    }
+
+    let max = numbers[0];
+    let min = numbers[0];
+    // numbers.forEach(function (n) {
+    //   if (max < n) {
+    //     max = n;
+    //   }
+    // });
+
+    for (let i = 0; i < numbers.length; i++) {
+      if (max < numbers[i]) {
+        max = numbers[i]
+      }
+
+      if (min > numbers[i]) {
+        min = numbers[i]
+      }
+    }
+
+    console.log(max)
+    console.log(min)
+  </script>
+</body>
+
+</html>

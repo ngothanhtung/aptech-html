@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h3>
+    Nhập vào từ bàn phím 1 số nguyên dương n, sau đó in ra từ 1 đến n có bao nhiêu số chia hết cho 3.
+  </h3>
+
+  <script>
+    let n = prompt('Nhập 1 số nguyên dương', 0);
+
+    let count = 0;
+    for (let i = 1; i <= n; i++) {
+      if (i % 3 === 0) {
+        count = count + 1; // count++
+      }
+    }
+
+    console.log(count);
+  </script>
+</body>
+
+</html>
