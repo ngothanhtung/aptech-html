@@ -36,13 +36,10 @@
       }
 
       function myCallback(data, status) {
-        console.log(status);
         //array
         var table = document.getElementById('myTable');
 
         data.forEach((record) => {
-          console.log(record);
-
           addRow(table, record);
         });
       }
