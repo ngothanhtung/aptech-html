@@ -12,9 +12,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-
+  <!-- JQUERY VALDATION -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-  <!-- validate file -->
+  <!-- Validate file -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
   <style>
     .error {
@@ -46,7 +46,7 @@
 
       <div class="form-group">
         <label>Email address</label>
-        <input type="text" class="form-control" name="email" placeholder="Email" />
+        <input type="email" class="form-control" name="email" placeholder="Email" />
       </div>
       <div class="form-group">
         <label>Password</label>
@@ -77,10 +77,10 @@
       },
       age: {
         required: true,
-        // min: 18,
-        // max: 60,
+        min: 18,
+        max: 60,
         // hoặc
-        digits: true,
+        // digits: true,
         // range: [18, 60],
         //step: 10 // step: x => so chia het cho x
       },
@@ -102,6 +102,9 @@
       },
     },
     messages: {
+      username: {
+        required: 'Bạn chưa nhập tên đăng nhập',
+      },
       email: {
         required: 'Bạn chưa nhập email',
         minlength: jQuery.validator.format('Toi thieu co {0} ky tu'),

@@ -85,22 +85,15 @@
 
   <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
-      'use strict'
-      var form = document.querySelector('#my-form');
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
+    var form = document.querySelector('#my-form');
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
 
-        form.classList.add('was-validated')
-      }, false)
-
-
-      // Loop over them and prevent submission
-
-    })()
+      form.classList.add('was-validated')
+    }, false);
   </script>
 </body>
 
