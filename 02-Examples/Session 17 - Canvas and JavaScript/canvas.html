@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>CANVAS EXAMPLE</title>
 </head>
+
 <body>
 	<canvas id="mCanvas" width="800" height="600">
 	</canvas>
@@ -10,17 +12,17 @@
 	</canvas>
 </body>
 <script>
-	window.onload = function() {
+	window.onload = function () {
 		var canvas = document.getElementById('mCanvas');
 		var ctext = canvas.getContext('2d');
-		
+
 		ctext.beginPath();
 		ctext.rect(18, 50, 200, 100);
 		ctext.fillStyle = "DarkBlue";
 		ctext.fill();
-		ctext.fillRect(250, 50, 200,100);
-		ctext.clearRect(270,70,160,60);
-		
+		ctext.fillRect(250, 50, 200, 100);
+		ctext.clearRect(270, 70, 160, 60);
+
 		//Vẽ đường thẳng
 		canvas = document.getElementById('nCanvas');
 		ctext = canvas.getContext('2d');
@@ -40,7 +42,7 @@
 		ctext.beginPath();
 		ctext.arc(x, y, radius, startAngle, endAngle, ctrClockwise);
 		// line color
-		ctext.fillStyle="red";
+		ctext.fillStyle = "red";
 		ctext.fill();
 
 		ctext.moveTo(300, 130);
@@ -50,13 +52,14 @@
 		ctext.quadraticCurveTo(100, 0, 200, 150);
 
 		ctext.strokeStyle = "DarkGreen";
-		ctext.stroke();	
+		ctext.stroke();
 
 		ctext.font = "italic 30pt Calibri";
 		ctext.fillStyle = "MediumVioletRed";
 
 		ctext.fillText("Welcome to HTML5!", 40, 100);
-	 }
+	}
 
 </script>
+
 </html>

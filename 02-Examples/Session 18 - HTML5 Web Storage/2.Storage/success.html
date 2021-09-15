@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title></title>
 </head>
+
 <body onload="print()">
-<h1>SUCCESS PAGE</h1>
-<div id="result">
-	
-</div>
+	<h1>SUCCESS PAGE</h1>
+	<div id="result">
+
+	</div>
 </body>
 <script>
-	function print () {
+	function print() {
 		var username = localStorage.getItem("username");
 		var result = document.getElementById("result");
 		result.innerHTML = username;
@@ -18,4 +20,5 @@
 	}
 	//print();
 </script>
+
 </html>
