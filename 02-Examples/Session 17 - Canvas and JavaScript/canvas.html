@@ -8,6 +8,7 @@
 <body>
 	<canvas id="mCanvas" width="800" height="600">
 	</canvas>
+	<hr />
 	<canvas id="nCanvas" width="800" height="600">
 	</canvas>
 </body>
@@ -15,11 +16,12 @@
 	window.onload = function () {
 		var canvas = document.getElementById('mCanvas');
 		var ctext = canvas.getContext('2d');
-
 		ctext.beginPath();
+
 		ctext.rect(18, 50, 200, 100);
-		ctext.fillStyle = "DarkBlue";
+		ctext.fillStyle = "blue";
 		ctext.fill();
+
 		ctext.fillRect(250, 50, 200, 100);
 		ctext.clearRect(270, 70, 160, 60);
 
@@ -32,13 +34,13 @@
 		ctext.strokeStyle = "red";
 		ctext.stroke();
 
-
 		var x = canvas.width / 2;
 		var y = canvas.height / 2;
 		var radius = 75;
 		var startAngle = 0 * Math.PI;
 		var endAngle = 2 * Math.PI;
 		var ctrClockwise = false;
+
 		ctext.beginPath();
 		ctext.arc(x, y, radius, startAngle, endAngle, ctrClockwise);
 		// line color
