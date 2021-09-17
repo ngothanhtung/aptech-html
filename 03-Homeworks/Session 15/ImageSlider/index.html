@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slide Example</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+    }
+
+    .slide {
+      display: none;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1140px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Caption text */
+    .caption-text {
+      color: #f2f2f2;
+      font-size: 20px;
+      padding: 8px 12px;
+      margin-top: -48px;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .number-text {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 16px;
+      width: 16px;
+      margin: 0 2px;
+      background-color: #bbbbbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.75s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    .dots-container {
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade-animation;
+      animation-duration: 2s;
+    }
+
+    @keyframes fade-animation {
+      from {
+        opacity: 0.5
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="slideshow-container">
+    <!-- HÌNH 1 -->
+    <div class="slide fade">
+      <figure>
+        <div class="number-text">1 / 3</div>
+        <img src="./images/1.jpg" style="width:100%">
+        <figcaption class="caption-text">Phong cảnh núi rừng</figcaption>
+      </figure>
+    </div>
+    <!-- HÌNH 2 -->
+    <div class="slide fade">
+      <figure>
+        <div class="number-text">2 / 3</div>
+        <img src="./images/2.jpg" style="width:100%">
+        <figcaption class="caption-text">Phong cảnh băng tuyết</figcaption>
+      </figure>
+    </div>
+
+    <!-- HÌNH 3 -->
+    <div class="slide fade">
+      <figure>
+        <div class="number-text">3 / 3</div>
+        <img src="./images/3.jpg" style="width:100%">
+        <figcaption class="caption-text">Phong cảnh sông núi</figcaption>
+      </figure>
+    </div>
+  </div>
+  </div>
+
+  <!-- DOTS -->
+  <div class="dots-container">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+    // Current index;
+    let slideIndex = 0;
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      let dots = document.getElementsByClassName("dot");
+
+      //set display: none for all slides
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slideIndex++;
+      // last slide => reset slideIndex to 1
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+
+      // reset class: "" of dots
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      // display current slide
+      slides[slideIndex - 1].style.display = "block";
+
+      // set active class for current dot
+      dots[slideIndex - 1].className += " active";
+    }
+
+    // Run the 1st time
+    showSlides();
+    // Change image every 3 seconds
+    setInterval(showSlides, 3000);
+  </script>
+
+</body>
+
+</html>
