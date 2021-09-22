@@ -32,16 +32,16 @@
     </section>
 
     <section id='form'>
-      <form>
+      <form class="needs-validation" novalidate>
         <!-- FIRST NAME & LAST NAME -->
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="firstName" class="form-label">First name</label>
-            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" />
+            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required />
           </div>
           <div class="col-md-6 mb-3">
             <label for="lastName" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" />
+            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required />
           </div>
         </div>
         <!-- COMPANY -->
@@ -52,7 +52,7 @@
         <!-- EMAIL -->
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
         </div>
         <!-- PHONE NUMBER -->
         <div class="mb-3">
@@ -83,6 +83,27 @@
       </form>
     </section>
   </div>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
 </body>
 
 </html>
