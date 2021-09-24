@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <!-- SCRIPT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    #cover {
+      height: 400px;
+      background-image: url('./images/students.jpg');
+      background-position: center;
+      background-size: cover;
+    }
+
+    .left-content {
+      /* background-color: yellow; */
+      min-height: 300px;
+    }
+
+    .right-content {
+      /* margin-top: -300px; */
+      background-color: green;
+      min-height: 600px;
+    }
+
+    .content-block {
+      display: none;
+    }
+
+    .active-tab {
+      border-bottom: 2px red solid;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- COVER -->
+  <section>
+    <div id='cover'>
+    </div>
+  </section>
+  <!-- CONTENT -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="left-content">
+            <ul class="nav">
+              <li id='link-overview' class="nav-item"><a class="nav-link" onclick="showOverview()" href="#">Overview</a></li>
+              <li id='link-curriculum' class="nav-item"><a class="nav-link" onclick="showCurriculum()" href="#">Curriculum</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Instructor</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
+            </ul>
+
+            <div class="content-block" id='overview-content'>
+              <p>
+                Stock Photos & Images
+                Stock images have a bit of a bad reputation, but Unsplash is reinventing the stock photo.
+              </p>
+            </div>
+
+            <div class="content-block" id='curriculum-content'>
+              <p>
+                Travel Images
+                Choose from hundreds of free travel pictures. Download HD travel photos for free on Unsplash.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="right-content"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $(document).ready(function () {
+      $('#link-overview').toggleClass('active-tab');
+      $('#overview-content').show();
+    })
+
+    function showOverview() {
+      $('.content-block').hide();
+      $('.nav-item').removeClass('active-tab');
+
+      $('#link-overview').toggleClass('active-tab');
+      $('#overview-content').fadeIn(500);
+    }
+
+    function showCurriculum() {
+      $('.content-block').hide();
+      $('.nav-item').removeClass('active-tab');
+
+      $('#link-curriculum').toggleClass('active-tab');
+      $('#curriculum-content').fadeIn(500);
+    }
+  </script>
+</body>
+
+</html>

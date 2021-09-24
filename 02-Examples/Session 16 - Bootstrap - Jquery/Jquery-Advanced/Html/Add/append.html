@@ -1,3 +1,4 @@
+<!-- https://www.w3schools.com/jquery/jquery_dom_add.asp -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,22 +19,6 @@
     body {
       margin: 0;
 
-    }
-
-    .col-hobby {
-      /* background-color: aquamarine; */
-    }
-
-    .col-freelandcer {
-      /* background-color: blue; */
-    }
-
-    .col-startup {
-      /* background-color: green; */
-    }
-
-    .col-enterprise {
-      /* background-color: yellow; */
     }
 
     .price-container {
@@ -64,37 +49,65 @@
     <section id="header-block"></section>
 
     <section id="price-block">
-      <div class="row">
-        <!-- HOBBY -->
+      <div class="row" id='row'>
+        <!-- APPEND HERE -->
+
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const items = [
+      {
+        title: 'Hobby',
+        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        price: 12
+      },
+      {
+        title: 'Starter',
+        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        price: 24
+      },
+      {
+        title: 'Startup',
+        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        price: 32
+      },
+      {
+        title: 'Enterprise',
+        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        price: 48
+      }
+    ]
+
+    items.forEach(item => {
+      $("#row").append(`
         <div class="col-lg-3 col-md-6 col-hobby my-4">
           <div class="price-container mx-md-0 mx-4">
             <div class="price-top-block d-flex flex-column p-4">
               <span class="fs-3 fw-bold">
-                Hobby
+                ${ item.title }
+              </span>
+              <p>
+                ${ item.subTitle }
+              </p>
+              <span class="fs-3 fw-bold">
+                $${ item.price }/month
               </span>
               <div class="d-flex flex-grow-1"></div>
-              <button class="btn btn-primary btn-buy">
-                Buy Hobby
+              <button class="btn btn-primary btn-buy mt-3">
+                Buy ${ item.title }
               </button>
             </div>
             <div class="price-bottom-block"></div>
           </div>
         </div>
-        <!-- FREE LANDCER -->
-        <div class="col-lg-3 col-md-6 col-freelandcer my-4">
-          <div class="price-container mx-md-0 mx-4">hellow</div>
-        </div>
-        <!-- START UP -->
-        <div class="col-lg-3 col-md-6 col-startup my-4">
-          <div class="price-container mx-md-0 mx-4">hellow</div>
-        </div>
-        <!-- ENTERPRISE -->
-        <div class="col-lg-3 col-md-6 col-enterprise my-4">
-          <div class="price-container mx-md-0 mx-4">hellow</div>
-        </div>
-      </div>
-    </section>
-  </div>
+    `);
+    });
+
+
+  </script>
+  </script>
 </body>
 
 </html>
