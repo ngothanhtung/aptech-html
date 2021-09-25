@@ -21,7 +21,6 @@
     }
 
     .square-animation {
-
       background-color: violet;
       animation-name: rotation;
       animation-duration: 2s;
@@ -45,13 +44,15 @@
 
 <body>
   <div class="container">
-    <div id='course'>
-    </div>
+    <div id='course'></div>
+    <button class="btn btn-primary" id='btn1'>
+      Btn1
+    </button>
+
     <button class="btn btn-primary" id='toggleClass'>Toggle class</button>
-    <div id='square' class="square">
+
+    <div id='square'>
     </div>
-
-
   </div>
 
   <script>
@@ -59,16 +60,26 @@
     $("#course").css({
       'height': '100px',
       'width': '100px',
-      'background-color': 'red'
+      'background-color': 'orange'
     });
+
+    $('#btn1').on('click', function () {
+      // $("#course").css({
+      //   'width': '100%',
+      // });
+
+
+    })
 
     $("#course").css('border-radius', '8px');
 
     // addClass
     // $("#square").addClass('square');
+    // removeClass
+    // $("#square").removeClass('square');
 
     $('#toggleClass').on('click', function () {
-      $("#square").toggleClass('square-animation');
+      $("#square").toggleClass('square square-animation');
     })
     //
   </script>
