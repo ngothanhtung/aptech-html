@@ -1,20 +1,22 @@
+# Bài tập buổi 1 & 2: Cài đặt môi trường làm việc và vẽ phác thảo
+
 ## Task 1: Cài đặt Figma
 
 ## Task 2: Cài đặt Visual Studio Code
 
-## Task 3: Cài đặt các extensions:
+## Task 3: Cài đặt các extensions
 
-- Auto Close Tag
-- Auto Rename Tag
-- HTML CSS Support
-- HTML Snippets
-- Live Server
-- Prettier - Code formatter
-- Visual Studio IntelliCode
-- Bracket Pair Colorizer 2
-- Color Highlight
-- HTML CSS Support
+- Auto Close Tag (Jun Han)
+- Auto Rename Tag (Jun Han)
+- Auto Complete Tag (Jun Han)
+- HTML CSS Support (ecmel)
+- Live Server (Ritwick Dey)
+- Prettier - Code Formater (Prettier)
+- IntelliCode (Microsoft)
+- Color Highlight (Sergii N)
 - Dracula Official (theme)
+- Material Icon Theme (icon)
+- Font JetBrains Mono (font)
 
 ## Task 4: Vẽ phác thảo - Wireframe
 

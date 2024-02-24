@@ -1,53 +1,62 @@
-# Link học online:
+# HTML5, CSS3, JavaScript
 
-> https://meet.google.com/bvn-xpbu-osx
+## Cài đặt: Visual Studio Code
 
-# Cài đặt: Visual Studio Code
+### Download
 
-### Download:
+> <https://code.visualstudio.com/>
 
-> https://code.visualstudio.com/
+### Cài đặt các extensions
 
-### Cài đặt các extensions:
-
-- Auto Close Tag
-- Auto Rename Tag
-- HTML CSS Support
-- HTML Snippets
-- Live Server
-- Prettier - Code formatter
-- Visual Studio IntelliCode
-- Bracket Pair Colorizer 2
-- Color Highlight
+- Auto Close Tag (Jun Han)
+- Auto Rename Tag (Jun Han)
+- Auto Complete Tag (Jun Han)
+- HTML CSS Support (ecmel)
+- Live Server (Ritwick Dey)
+- Prettier - Code Formater (Prettier)
+- IntelliCode (Microsoft)
+- Color Highlight (Sergii N)
 - Dracula Official (theme)
+- Material Icon Theme (icon)
+- Font JetBrains Mono (font)
 
-## Session 02 - Practice & Homeworks
+### Thiết lập auto format cho code
 
-- Vẽ Wireframe: https://www.sketch.com/s/bab4fc21-b247-47e7-8b30-6cf82277ebd2?fbclid=IwAR0pLTvJCq8QdGe0fZVkLXX9ElWW-Ct52tuP6tscmlf9E9YG_Fambo9b7vM
+- Mở settings (Ctrl + ,)
+- Tìm `format on save`
+- Check vào ô `Editor: Format On Save`
 
 ## Một số công cụ vẽ Wireframe + Mockup
 
-- https://moqups.com/
-- ADOBE XD (https://www.adobe.com/sea/products/xd.html)
-- FIGMA (https://www.figma.com/downloads)
+- <https://moqups.com/>
+- FIGMA (<https://www.figma.com/downloads>)
 
 ## Một số công cụ về màu
 
-- https://colorhunt.co/
-- https://coolors.co/
-- https://colors.eva.design/
-- https://mycolor.space/
-- https://material.io/resources/color/#!/?view.left=0&view.right=0
-- https://flatuicolors.com/
-- https://color.adobe.com/create/color-wheel
-- https://colorpalettes.net/
-- https://www.materialpalette.com/
+- <https://colorhunt.co/>
+- <https://coolors.co/>
+- <https://colors.eva.design/>
+- <https://mycolor.space/>
+- <https://material.io/resources/color/#!/?view.left=0&view.right=0>
+- <https://flatuicolors.com/>
+- <https://color.adobe.com/create/color-wheel>
+- <https://colorpalettes.net/>
+- <https://www.materialpalette.com/>
 
-## Một số Website về thiết kế:
+## Một số công cụ về font
 
--https://collectui.com/
+- <https://fonts.google.com>
+
+## Một số công cụ về icon
+
+- <https://www.flaticon.com/>
+- <https://www.iconfinder.com/>
+
+## Một số Website về thiết kế
+
+-<https://collectui.com/>
 
 ## Một số website cung cấp ảnh chất lượng cao miễn phí
 
-- https://pixabay.com/
-- https://unsplash.com/
+- <https://pixabay.com/>
+- <https://unsplash.com/>
