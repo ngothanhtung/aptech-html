@@ -1,7 +1,35 @@
 /* Các ghi chú mô tả */
-.square-green {
-  height: 200px;
-  width: 200px;
+* {
+  font-family: 'Gill Sans';
+}
+div {
+  height: 100px;
+  width: 300px;
+  border: 1px solid green;
+}
+/* classname */
+.square-blue {
+  background-color: blue;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: chartreuse;
+}
+
+.square-red {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+#square-green {
+  height: 100px;
+  width: 100px;
   background-color: green;
-  border-radius: 16px;
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLEX BOX</title>
+  <style>
+    .container {
+      display: flex;
+      background-color: green;
+      height: 400px;
+    }
+
+    .column-left {
+      /* thiết lập phần mà nó chiếm */
+      flex: 1;
+      /* Thiết lập chế độ flex */
+      display: flex;
+      background-color: yellow;
+      height: 400px;
+      /* hướng của flex, mặc định là row */
+      flex-direction: row;
+      /* canh theo hướng chính */
+      justify-content: space-between;
+      /* canh theo hướng phụ, hướng ngược lại */
+      align-items: center;
+    }
+
+    .column-right {
+      /* flex: ; */
+      width: 100px;
+      background-color: orange;
+      height: 400px;
+    }
+
+    .square {
+      height: 60px;
+      width: 60px;
+      background-color: brown;
+      border-radius: 30px;
+    }
+  </style>
+</head>
+
+
+
+<body>
+  <div class="container">
+    <div class="column-left">
+      <div class="square" style='background-color: red;'></div>
+      <div class="square" style="background-color: green;"></div>
+      <div class="square" style="background-color: violet;"></div>
+    </div>
+    <div class="column-right">
+
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -3,58 +3,52 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FLEX BOX</title>
+  <title>FlexBox Examples</title>
   <style>
     .container {
       display: flex;
+      flex-direction: row;
       background-color: green;
       height: 400px;
+      justify-content: space-evenly;
+      align-items: center;
+
     }
 
-    .column-left {
-      /* thiết lập phần mà nó chiếm */
-      flex: 1;
-      /* Thiết lập chế độ flex */
+    .square-1 {
       display: flex;
       background-color: yellow;
-      height: 400px;
-      /* hướng của flex, mặc định là row */
-      flex-direction: row;
-      /* canh theo hướng chính */
-      justify-content: space-between;
-      /* canh theo hướng phụ, hướng ngược lại */
-      align-items: center;
-    }
-
-    .column-right {
-      /* flex: ; */
       width: 100px;
-      background-color: orange;
-      height: 400px;
+      height: 100px;
     }
 
-    .square {
-      height: 60px;
-      width: 60px;
-      background-color: brown;
-      border-radius: 30px;
+    .square-2 {
+      display: flex;
+      background-color: blue;
+      width: 100px;
+      height: 100px;
+
+    }
+
+    .square-3 {
+      display: flex;
+      background-color: red;
+      width: 100px;
+      height: 100px;
     }
   </style>
 </head>
 
-
-
 <body>
   <div class="container">
-    <div class="column-left">
-      <div class="square" style='background-color: red;'></div>
-      <div class="square" style="background-color: green;"></div>
-      <div class="square" style="background-color: violet;"></div>
-    </div>
-    <div class="column-right">
+    <div class="square-1">
 
+    </div>
+    <div class="square-2">
+
+    </div>
+    <div class="square-3">
 
     </div>
   </div>
