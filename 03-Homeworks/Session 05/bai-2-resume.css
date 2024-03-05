@@ -1,0 +1,129 @@
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.row-header {
+  display: flex;
+
+  height: 96px;
+  background-color: aqua;
+}
+.row-header span {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  margin-left: 24px;
+  margin-bottom: 16px;
+}
+
+.row-name {
+  padding-left: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+}
+.row-name h1 {
+  color: #9da3a7;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  letter-spacing: 8px;
+  margin: 0;
+  margin-bottom: 6px;
+}
+.row-name p {
+  color: #9da3a7;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-style: italic;
+  margin: 0;
+}
+.row-content {
+  display: flex;
+  height: auto;
+  /* background-color: rgb(116, 14, 114); */
+}
+
+.col-left {
+  display: flex;
+  align-items: flex-end;
+  width: 260px;
+  height: 100%;
+  background-color: black;
+}
+.col-right {
+  flex: 1;
+  background-color: white;
+  height: 100%;
+}
+
+.col-left-content {
+  display: flex;
+  height: 100%;
+  flex: 1;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  padding: 24px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.col-left-content img {
+  width: 100%;
+}
+
+.col-left-content p {
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+.col-left-content h2 {
+  margin-bottom: 12px;
+}
+
+.col-right-content {
+  font-family: 'Lato', sans-serif;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.col-right-content h2 {
+  color: #9da3a7;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.row-data {
+  display: flex;
+  margin-bottom: 16px;
+  /* background-color: yellow; */
+}
+
+.col-left-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* background-color: red; */
+  width: 120px;
+}
+
+.col-right-data h3 {
+  color: #9da3a7;
+  margin: 0;
+}
+
+.col-right-data p {
+  font-style: italic;
+  color: #9da3a7;
+  margin: 0;
+}
+
+.black-text {
+  color: black !important;
+}
