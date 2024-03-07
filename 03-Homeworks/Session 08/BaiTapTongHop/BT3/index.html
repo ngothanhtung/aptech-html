@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .thumbnail {
+      border: 1px solid #ccc;
+      width: 98px;
+      height: 98px;
+    }
+
+    .thumbnail img {
+      position: relative;
+      top: -1px;
+      left: -1px;
+      width: 100px;
+      height: 100px;
+      filter: grayscale(100%);
+      transition: all 0.5s;
+      transform: scale(1.0);
+    }
+
+    .thumbnail img:hover {
+      filter: grayscale(0%);
+      transform: scale(0.8);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="thumbnail">
+    <img src="https://htmlstream.com/preview/unify-v2.6.3/one-pages/music/assets/img-temp/600x600/img17.jpg" alt="">
+  </div>
+</body>
+
+</html>
