@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Examples</title>
+  <style>
+    .result-table {
+      width: 100%;
+      border-collapse: collapse;
+      /* border: 1px solid #000; */
+
+    }
+
+    .result-table th {
+      background-color: #f2f2f2;
+      border: 1px solid #000;
+      padding: 6px;
+      text-align: left;
+    }
+
+    /* .result-table tr:nth-child(even) {
+      background-color: #ff7272;
+    } */
+
+    .result-table tr:hover {
+      background-color: #2bff00;
+    }
+
+    .result-table td {
+      border: 1px solid #000;
+      padding: 6px;
+    }
+
+    .number-column {
+      width: 1%;
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table class="result-table">
+    <caption>Premier League Positions</caption>
+    <tr>
+      <th>Position</th>
+      <th>Club</th>
+      <th>Won</th>
+      <th>Draw</th>
+      <th>Lost</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td class="number-column">1</td>
+      <td>Arsenal</td>
+      <td class="number-column">20</td>
+      <td class="number-column">4</td>
+      <td class="number-column">4</td>
+      <td class="number-column">64</td>
+    </tr>
+    <tr>
+      <td class="number-column">2</td>
+      <td>Liverpool</td>
+      <td class="number-column">19</td>
+      <td class="number-column">7</td>
+      <td class="number-column">2</td>
+      <td class="number-column">64</td>
+    </tr>
+    <tr>
+      <td class="number-column">3</td>
+      <td>Manchester City</td>
+      <td class="number-column">19</td>
+      <td class="number-column">6</td>
+      <td class="number-column">3</td>
+      <td class="number-column">63</td>
+    </tr>
+    <tr>
+      <td class="number-column">4</td>
+      <td>Aston Villa</td>
+      <td class="number-column">17</td>
+      <td class="number-column">4</td>
+      <td class="number-column">7</td>
+      <td class="number-column">55</td>
+    </tr>
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block UI 6</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 16px;
+    }
+
+    .item {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 16px;
+      background-color: #0866FF;
+      height: 300px;
+    }
+
+    .item div {
+      flex: 1;
+      background-color: #002258;
+    }
+
+    .item img {
+      margin-top: 20px;
+      margin-left: 20px;
+      height: 64px;
+      width: 64px;
+    }
+
+    .item h3 {
+      color: #ffffff;
+    }
+
+    .item div:nth-child(1) {
+      background-color: blueviolet !important;
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item">
+      <div>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/2048px-2023_Facebook_icon.svg.png"
+          alt="">
+      </div>
+      <div></div>
+      <div>
+        <h3>Facebook</h3>
+        <p>5,000,000 likes</p>
+      </div>
+    </div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+</body>
+
+</html>
