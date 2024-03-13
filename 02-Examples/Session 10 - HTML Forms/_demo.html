@@ -6,15 +6,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form</title>
+  <style>
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .button {
+      border: none;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: white;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    button:active {
+      background-color: #001b35;
+    }
+
+    .input {
+      padding: 8px 6px;
+      border: 1px solid #ccc;
+    }
+
+    .input:focus {
+      border-color: #007bff;
+    }
+  </style>
 </head>
 
 <body>
-  <form name="Login">
-    <label>Username</label>
-    <input />
+  <form name="Login" class="form">
+    <label for="username">Tên đăng nhập</label>
+    <input class="input" name="username" id="username" />
+    <label>Password</label>
+    <input class="input" name="password" type="password" id="password" />
+    <button type="submit" class="button">Login</button>
+
   </form>
-
-
 </body>
 
 </html>
