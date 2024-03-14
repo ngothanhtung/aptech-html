@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-    <!-- SCRIPT -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BEM Examples</title>
 
-    <style>
-      .column--left-dark {
-      }
-      .column--left-light {
-      }
-      .column--right {
-      }
-      .column--small {
-      }
-      .column--aptech {
-      }
-      .column--tiki {
-      }
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <!-- SCRIPT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-      .mybtn {
-        text-align: center;
-        height: 48px;
-        width: 128px;
-        padding: 4px;
-      }
+  <style>
+    .header {
+      height: 120px;
+    }
 
-      .mybtn-small {
-        height: 32px;
-        width: 72px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div row>
-        <div class="col col-left"></div>
-        <div class="col col-right"></div>
-      </div>
+    .header__title {
+      color: red;
+      font-size: 32px;
+    }
 
-      <button class="mybtn mybtn-small"></button>
+    .header__title__small {
+      font-size: 24px;
+    }
+
+    .header__title__big {
+      font-size: 48px;
+    }
+
+    .column--left-dark {}
+
+    .column--left-light {}
+
+    .column--right {}
+
+    .column--small {}
+
+    .column--aptech {}
+
+    .column--tiki {}
+
+    .mybtn {
+      text-align: center;
+      height: 48px;
+      width: 128px;
+      padding: 4px;
+    }
+
+    .mybtn-small {
+      height: 32px;
+      width: 72px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="header">
+      <h1 class="header__title"></h1>
+      <p>Hellow</p>
     </div>
-  </body>
+    <div row>
+      <div class="col col-left"></div>
+      <div class="col col-right"></div>
+    </div>
+
+    <button class="mybtn mybtn-small"></button>
+  </div>
+</body>
+
 </html>
