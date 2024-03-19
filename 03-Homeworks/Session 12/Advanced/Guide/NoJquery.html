@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <img id="slider" src="Images/b1.jpg" height="400" />
-    <br />
 
-    <button id="btnPrevious" onclick="previous()">Previous</button>
-    <button id="btnNext" onclick="next()">Next</button>
-  </body>
-  <script>
-    var index = 1;
-    var count = 5;
-    var slider = document.getElementById('slider');
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
 
-    function previous() {
-      if (index === 1) return;
-      index = index - 1;
-      var url = 'Images/b' + index + '.jpg';
-      slider.src = url;
+<body>
+  <img id="slider" src="Images/b1.jpg" height="400" />
+  <br />
+
+  <button id="btnPrevious" disabled onclick="previous()">Previous</button>
+  <button id="btnNext" onclick="next()">Next</button>
+</body>
+<script>
+  var index = 1;
+  var count = 5;
+  var slider = document.getElementById('slider');
+  var btnNext = document.getElementById('btnNext');
+  var btnPrevious = document.getElementById('btnPrevious');
+
+  function previous() {
+    btnNext.disabled = false;
+    if (index === 1) {
+      btnPrevious.disabled = true;
+      return;
     }
 
-    function next() {
-      if (index === 5) return;
-      index = index + 1;
-      var url = 'Images/b' + index + '.jpg';
-      slider.src = url;
+    index = index - 1;
+    var url = 'Images/b' + index + '.jpg';
+    slider.src = url;
+  }
+
+  function next() {
+    btnPrevious.disabled = false;
+    if (index === 5) {
+      btnNext.disabled = true;
+      return;
     }
-  </script>
+    index = index + 1;
+    var url = 'Images/b' + index + '.jpg';
+    slider.src = url;
+  }
+</script>
+
 </html>

@@ -9,14 +9,34 @@
 
 <body></body>
 <script>
-  for (var i = 1; i <= 10; i++) {
+  for (let i = 1; i <= 10; i++) {
     document.write('<h1>' + i + '</h1>');
   }
-  // var i = 1;
+  // let i = 1;
   // while (i <= 10) {
   //   document.write('<h4>' + i + '</h4>');
   //   i++;
   // }
+
+  const products = ["iPhone", "Samsung", "Huawei", "Xiaomi", "Oppo"];
+  for (let i = 0; i < products.length; i++) {
+    document.write('<h1>' + products[i] + '</h1>');
+  }
+
+  // foreach
+  products.forEach((product) => {
+    document.write('<h1>' + product + '</h1>');
+  });
+
+  // for in
+  for (let index in products) {
+    document.write('<h1>' + products[index] + '</h1>');
+  }
+
+  // for of
+  for (let product of products) {
+    document.write('<h1>' + product + '</h1>');
+  }
 </script>
 
 </html>

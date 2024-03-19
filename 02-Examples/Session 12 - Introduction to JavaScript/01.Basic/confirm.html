@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-  </head>
-  <body>
-    <input type="button" onclick="ConfirmDelete()" name="Delete" value="Delete" />
-  </body>
-  <script>
-    function ConfirmDelete() {
-      var name = confirm('ARE YOU TO DELETE THIS ITEM?');
-      alert('You select: ' + name);
-    }
-  </script>
+
+<head>
+  <title></title>
+</head>
+
+<body>
+  <input type="button" onclick="confirmDelete()" name="Delete" value="Delete" />
+</body>
+<script>
+  function confirmDelete() {
+    var result = confirm('ARE YOU TO DELETE THIS ITEM?');
+    alert('You select: ' + result);
+    // 
+  }
+
+
+
+</script>
+
 </html>

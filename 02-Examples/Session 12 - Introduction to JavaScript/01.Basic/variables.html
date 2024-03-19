@@ -16,14 +16,14 @@
 
   <!-- SCRIPT -->
   <script>
-    // PRIMITIVE DATA TYPES
+    // PRIMITIVE DATA TYPES: Kiểu dữ liệu nguyên thủy
     // Không khuyên dùng var để khai báo biến
     var message = 'Hello'; // string
     // Khuyên dùng dùng let để khai báo biến
     let age = 19, score = 95.25; // OK
     age = 20;
     const name = "Peter"; // constant    
-    let abc = null;
+    let abc = null; // Kiểu dữ liệu null là kiểu dữ liệu không có giá trị
     let correct = true;
     correct = false;
     console.log(message);
@@ -37,8 +37,25 @@
       name: "Tony",
       email: "tony@gmmail.com",
       phone: "0905654321",
-      score: 90
+      score: 90,
+      address: {
+        city: "HCM",
+        district: "Tan Binh",
+        street: "Truong Son",
+        building: {
+          name: "Aptech",
+          floor: 5
+        }
+      },
+      favourites: ["Travel", "Music", "Reading"]
+
     };
+
+    let car = {
+      brand: "Toyota",
+      model: "Camry",
+      year: 2021
+    }
     console.log(student);
 
     // Array
@@ -68,11 +85,11 @@
     }
 
     let number = "25";
-    let n = parseInt(number);
+    let n = parseInt(number); // Chuyển đổi kiểu dữ liệu từ string sang number
     console.log(n + 5);
 
     let text = "2 + 2";
-    let m = eval(text);
+    let m = eval(text); // Chuyển đổi kiểu dữ liệu từ string sang biểu thức toán học
     console.log(m);
 
 

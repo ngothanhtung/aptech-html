@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #error {
+      font-size: 10px;
+      color: red;
+    }
+  </style>
+  <script>
+    function checkIsNumber(element) {
+      if (isNaN(element.value)) {
+        // set style red border
+        element.style.border = '1px solid red';
+        // set error message
+        document.getElementById('error').innerHTML = '<br/>Please enter a number';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <input type="text" value="" onblur="checkIsNumber(this)" />
+  <span id="error"></span>
+  <button>Save</button>
+</body>
+
+</html>

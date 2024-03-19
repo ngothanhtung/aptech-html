@@ -46,6 +46,13 @@
     // }
 
 
+    const price = 100;
+    const quantity = 10;
+    let discount = 5;
+
+    let total = (price * quantity) * (100 - discount) / 100;
+
+
     if (customerType === 'vip') {
       discount = 10;
     }

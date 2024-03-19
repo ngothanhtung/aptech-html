@@ -19,10 +19,15 @@
 
   <script>
     var myVideo = document.querySelector('#video1');
+    // var myVideo = document.getElementById('video1');
 
     function playPause() {
-      if (myVideo.paused) myVideo.play();
-      else myVideo.pause();
+      if (myVideo.paused) {
+        myVideo.play();
+      }
+      else {
+        myVideo.pause();
+      }
     }
 
     function makeFullscreen() {

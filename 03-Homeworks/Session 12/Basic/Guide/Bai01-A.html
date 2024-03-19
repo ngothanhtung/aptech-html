@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head lang="en">
-    <meta charset="UTF-8" />
-    <title></title>
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-  </head>
-  <body>
-    <p id="result"></p>
-  </body>
 
-  <script>
-    var s1 = prompt('Nhap so thu nhat:');
-    var s2 = prompt('Nhap so thu hai:');
-    var s3 = prompt('Nhap so thu ba:');
+<head lang="en">
+  <meta charset="UTF-8" />
+  <title></title>
+  <!-- <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+</head>
 
-    var n1 = parseInt(s1);
-    var n2 = parseInt(s2);
-    var n3 = parseInt(s3);
+<body>
+  <p id="result"></p>
+</body>
 
-    var sum = n1 + n2 + n3;
+<script>
+  var s1 = prompt('Nhap so thu nhat:');
+  var s2 = prompt('Nhap so thu hai:');
+  var s3 = prompt('Nhap so thu ba:');
 
-    // IN RA THE P
-    $('#result').html('TONG CUA 03 SO LA: ' + sum);
-  </script>
+  var n1 = parseInt(s1);
+  var n2 = parseInt(s2);
+  var n3 = parseInt(s3);
+
+  var sum = n1 + n2 + n3;
+
+  // IN RA THE P
+  // $('#result').html('TONG CUA 03 SO LA: ' + sum);
+  document.getElementById('result').innerHTML = 'TONG CUA 03 SO LA: ' + sum;
+</script>
+
 </html>
