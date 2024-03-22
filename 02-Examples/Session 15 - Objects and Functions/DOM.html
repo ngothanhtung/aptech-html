@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>DOM</h1>
+  <p id="demo">Hello World</p>
+  <button onclick="changeText()">Click me</button>
+  <script>
+    // https://www.w3schools.com/js/js_htmldom.asp
+
+    function changeText() {
+      const element = document.getElementById('demo');
+      console.log(element);
+      // document.getElementById('demo').innerHTML = 'Hello JavaScript!';
+    }
+  </script>
+</body>
+
+</html>
