@@ -9,6 +9,9 @@
 	if (typeof (Storage) != "undefined") {
 		// Store
 		// sessionStorage.setItem("Session-Storage", "Hello Session Storage");
+		sessionStorage.removeItem("Session-Storage");
+		// Clear all session storage
+		sessionStorage.clear();
 		// Retrieve
 		document.getElementById("result").innerHTML = sessionStorage.getItem("Session-Storage");
 	} else {
