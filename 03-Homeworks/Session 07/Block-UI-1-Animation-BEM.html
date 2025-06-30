@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>UI 1</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+	<style>
+		/* ==========================================================================
+       Base Styles
+       ========================================================================== */
+
+		:root {
+			--font-family: 'Roboto', sans-serif;
+			--font-weight-normal: 400;
+			--font-weight-medium: 500;
+			--color-white: #ffffff;
+			--color-background: #ecf0f1;
+			--spacing-sm: 12px;
+			--spacing-md: 24px;
+			--block-height: 54px;
+			--label-width: 160px;
+			--animation-duration: 3s;
+			--animation-timing: ease-out;
+
+			/* Theme colors */
+			--bandwidth-primary: #c62828;
+			--bandwidth-secondary: #f44336;
+			--storage-primary: #0097a7;
+			--storage-secondary: #00bcd4;
+		}
+
+		/* ==========================================================================
+       Layout Components
+       ========================================================================== */
+
+		.progress-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: var(--spacing-sm);
+		}
+
+		.progress-bar {
+			display: flex;
+			margin-bottom: var(--spacing-md);
+			width: 100%;
+			height: var(--block-height);
+			background-color: var(--color-background);
+			border-radius: 4px;
+			overflow: hidden;
+		}
+
+		.progress-bar__label {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			width: var(--label-width);
+			height: inherit;
+		}
+
+		.progress-bar__track {
+			display: flex;
+			flex: 1;
+			height: inherit;
+			position: relative;
+		}
+
+		.progress-bar__fill {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			height: 100%;
+			animation-duration: var(--animation-duration);
+			animation-timing-function: var(--animation-timing);
+			animation-fill-mode: forwards;
+		}
+
+		/* ==========================================================================
+       Typography
+       ========================================================================== */
+
+		.progress-bar__text {
+			font-family: var(--font-family);
+			font-weight: var(--font-weight-medium);
+			color: var(--color-white);
+			font-size: 14px;
+		}
+
+		.progress-bar__label .progress-bar__text {
+			margin-right: var(--spacing-md);
+		}
+
+		.progress-bar__fill .progress-bar__text {
+			margin-left: var(--spacing-md);
+		}
+
+		/* ==========================================================================
+       Theme Variants
+       ========================================================================== */
+
+		/* Bandwidth Theme */
+		.progress-bar--bandwidth .progress-bar__label {
+			background-color: var(--bandwidth-primary);
+		}
+
+		.progress-bar--bandwidth .progress-bar__fill {
+			background-color: var(--bandwidth-secondary);
+			width: 20%;
+			animation-name: progressAnimation;
+		}
+
+		/* Storage Theme */
+		.progress-bar--storage .progress-bar__label {
+			background-color: var(--storage-primary);
+		}
+
+		.progress-bar--storage .progress-bar__fill {
+			background-color: var(--storage-secondary);
+			width: 50%;
+			animation-name: progressAnimation;
+		}
+
+		/* ==========================================================================
+       Animations
+       ========================================================================== */
+
+		@keyframes progressAnimation {
+			from {
+				width: 0%;
+				opacity: 0.8;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+
+		/* ==========================================================================
+       Utility Classes
+       ========================================================================== */
+
+		.animate-delayed {
+			animation-delay: 0.5s;
+		}
+
+		.animate-slow {
+			animation-duration: 4s;
+		}
+
+		.animate-fast {
+			animation-duration: 2s;
+		}
+
+		/* ==========================================================================
+       Responsive Design
+       ========================================================================== */
+
+		@media (max-width: 768px) {
+			.progress-bar__label {
+				width: 120px;
+			}
+
+			.progress-bar__text {
+				font-size: 12px;
+			}
+
+			.progress-bar__label .progress-bar__text {
+				margin-right: var(--spacing-sm);
+			}
+
+			.progress-bar__fill .progress-bar__text {
+				margin-left: var(--spacing-sm);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="progress-container">
+		<!-- Bandwidth Progress Bar -->
+		<div class="progress-bar progress-bar--bandwidth">
+			<div class="progress-bar__label">
+				<span class="progress-bar__text">BANDWIDTH</span>
+			</div>
+			<div class="progress-bar__track">
+				<div class="progress-bar__fill">
+					<span class="progress-bar__text">20%</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- Storage Progress Bar -->
+		<div class="progress-bar progress-bar--storage animate-delayed">
+			<div class="progress-bar__label">
+				<span class="progress-bar__text">STORAGE</span>
+			</div>
+			<div class="progress-bar__track">
+				<div class="progress-bar__fill">
+					<span class="progress-bar__text">50%</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
