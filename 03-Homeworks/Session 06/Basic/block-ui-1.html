@@ -12,76 +12,120 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      --container-width: 540px;
+      --font-family: 'Roboto', sans-serif;
+      --font-size: 13px;
+      --font-weight-bold: 700;
+      --color-white: #ffffff;
+      --color-background: #ecf0f1;
+      --spacing: 16px;
+      --block-height: 54px;
+      --label-width: 160px;
+      --spacing-bottom: 16px;
+
+
+      /* Theme colors */
+      --bandwidth-primary: #c62828;
+      --bandwidth-secondary: #f44336;
+      --bandwidth-text: "Bandwidth";
+      --bandwidth-percentage: 20%;
+      --bandwidth-percentage-text: "20%";
+
+      --storage-primary: #0097a7;
+      --storage-secondary: #00bcd4;
+      --storage-text: "Storage";
+      --storage-percentage: 50%;
+      --storage-percentage-text: "50%";
+    }
+
     .container {
-      width: 540px;
+      width: var(--container-width);
       margin: 0 auto;
     }
 
     .row {
       display: flex;
-      margin-bottom: 16px;
+      margin-bottom: var(--spacing-bottom);
+      height: var(--block-height);
     }
 
     .left-column {
-      border-top-left-radius: 8px;
-      border-bottom-left-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      width: 120px;
-      height: 40px;
+      width: var(--label-width);
+      height: 100%;
 
     }
 
     .left-column>span {
-      margin-right: 16px;
-      color: white;
+      margin-right: var(--spacing);
+      color: var(--color-white);
+      font-family: var(--font-family);
+      font-size: var(--font-size);
+      font-weight: var(--font-weight-bold);
       text-transform: uppercase;
-      font-size: 12px;
-      font-family: 'Lato', sans-serif;
     }
 
     .right-column {
       flex: 1;
-      background-color: #ececec;
+      background-color: var(--color-background);
     }
 
     .right-column-percent {
       display: flex;
       align-items: center;
-      height: 40px;
+      height: 100%;
     }
 
     .right-column-percent>span {
-      margin-left: 12px;
-      color: white;
-      font-weight: 700;
-      font-size: 12px;
-      font-family: 'Lato', sans-serif;
+      margin-left: var(--spacing);
+      color: var(--color-white);
+      font-family: var(--font-family);
+      font-size: var(--font-size);
+      font-weight: var(--font-weight-bold);
+
     }
 
-    .bandwidth-color-1 {
-      background-color: #E54D4C;
+    .bandwidth-color-primary {
+      background-color: var(--bandwidth-primary)
     }
 
-    .bandwidth-color-2 {
-      background-color: #F75354;
+    .bandwidth-color-secondary {
+      background-color: var(--bandwidth-secondary);
     }
 
-    .storage-color-1 {
-      background-color: rgb(3, 163, 163);
+    .storage-color-primary {
+      background-color: var(--storage-primary);
     }
 
-    .storage-color-2 {
-      background-color: rgb(5, 202, 202);
+    .storage-color-secondary {
+      background-color: var(--storage-secondary);
     }
 
-    .percent-20 {
-      width: 20%;
+
+
+
+
+    .bandwidth-text::before {
+      content: var(--bandwidth-text);
     }
 
-    .percent-50 {
-      width: 50%;
+    .bandwidth-percent-text::before {
+      content: var(--bandwidth-percentage-text);
+    }
+
+    .bandwidth-percent {
+      width: var(--bandwidth-percentage)
+    }
+
+    .storage-percent-text::before {
+      content: var(--storage-percentage-text);
+    }
+
+    .storage-percent {
+      width: var(--storage-percentage);
     }
   </style>
 </head>
@@ -92,36 +136,30 @@
     <!-- BANDWIDTH -->
     <section>
       <div class="row">
-        <div class="left-column bandwidth-color-1">
-          <span>
-            Bandwidth
-          </span>
+        <div class="left-column bandwidth-color-primary">
+          <span class="bandwidth-text"></span>
         </div>
         <div class="right-column">
-          <div class="right-column-percent bandwidth-color-2 percent-20">
-            <span>20%</span>
+          <div class="right-column-percent bandwidth-color-secondary bandwidth-percent">
+            <span class="bandwidth-percent-text"></span>
           </div>
-          <div></div>
         </div>
       </div>
     </section>
 
 
     <!-- STORAGE -->
-    <div class="row">
-      <div class="left-column storage-color-1">
-        <span>
-          Storage
-        </span>
+    <section class="row">
+      <div class="left-column storage-color-primary">
+        <span>Storage</span>
       </div>
-      <div class="right-column">
-        <div class="right-column-percent storage-color-2 percent-50">
-          <span>50%</span>
-        </div>
-        <div></div>
-      </div>
-    </div>
 
+      <div class="right-column">
+        <div class="right-column-percent storage-color-secondary storage-percent">
+          <span class="storage-percent-text"></span>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
 
